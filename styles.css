@@ -1,0 +1,19 @@
+.title {
+  color: #00afd5;
+}
+
+ul li {
+  padding: 10px 0; /* Adds vertical padding to each list item */
+}
+
+ul li:last-child {
+  border-bottom: none; /* Removes the bottom border from the last list item */
+}
+
+ul li a {
+  color: #333; /* Changes the link color */
+}
+
+ul li a:hover {
+  color: #007bff; /* Changes the link color when hovered */
+}
