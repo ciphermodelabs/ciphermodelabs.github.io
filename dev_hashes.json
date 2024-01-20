@@ -1,1 +1,1 @@
-{"Azure_policy_digests": {}, "GCP_image_digests": {}, "UI_digests": {}}
+{"Azure_policy_digests": {"test_deployment": [["79fc1c71c422b85ebd2672a993f4298e5ec82545dfa55b537a2b856f00490260", "2024-01-20 02:15:51"]]}, "GCP_image_digests": {"test_deployment": [["sha256:77bdff22ea3ec31760df93991113598c7d108d324d1fce23ed8dd9729885379f", "2024-01-20 02:15:51"]]}, "UI_digests": {"test_deployment": [["sha384:7209cc3be6da5b795c8ee393efb74ebc389ffeff5db344dbf15bcf5a428cce36ba8d5fe549769e654064dd29b7d9bf72", "2024-01-20 02:15:51"]]}}
