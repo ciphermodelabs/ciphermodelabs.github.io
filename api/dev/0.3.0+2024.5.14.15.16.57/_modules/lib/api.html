@@ -1,0 +1,1638 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lib.api &#8212; CiphermodeClient  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=1b90ffb1" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/lib/api';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">CiphermodeClient  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for lib.api</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">.converter</span> <span class="kn">import</span> <span class="n">PandasConverter</span>
+<span class="kn">from</span> <span class="nn">.rpcs</span> <span class="kn">import</span> <span class="n">GrpcApi</span>
+<span class="kn">from</span> <span class="nn">.utils</span> <span class="kn">import</span> <span class="n">CiphermodeException</span><span class="p">,</span> <span class="n">normalize_address</span><span class="p">,</span> <span class="n">parse_sql_permissions</span>
+<span class="kn">from</span> <span class="nn">.auth</span> <span class="kn">import</span> <span class="n">AuthHandler</span>
+
+<span class="kn">from</span> <span class="nn">.proto</span> <span class="kn">import</span> <span class="n">common_pb2</span>
+<span class="kn">from</span> <span class="nn">.onnx</span> <span class="kn">import</span> <span class="n">convert_onnx_model_to_typed_value</span>
+
+
+<div class="viewcode-block" id="CiphermodeApi">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi">[docs]</a>
+<span class="k">class</span> <span class="nc">CiphermodeApi</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">address</span><span class="p">,</span> <span class="n">auth_handler</span><span class="p">,</span> <span class="n">cert</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tls_domain</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">private_key</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">certificate_chain</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the CiphermodeApi instance.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            address (str): The address of the server.</span>
+<span class="sd">            auth_handler (AuthenticationHandler): An instance of an authentication handler.</span>
+<span class="sd">            cert (str, optional): Path to a TLS certificate file.</span>
+<span class="sd">            tls_domain (str, optional): The domain protected by the TLS certificate.</span>
+<span class="sd">            private_key (str, optional): The client&#39;s private key.</span>
+<span class="sd">            certificate_chain (str, optional): The client&#39;s certificate chain.</span>
+<span class="sd">            *args: Arguments for the PandasConverter.</span>
+<span class="sd">            **kwargs: Kwargs for the PandasConverter.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stub</span> <span class="o">=</span> <span class="n">GrpcApi</span><span class="p">(</span>
+            <span class="n">address</span><span class="p">,</span> <span class="n">auth_handler</span><span class="p">,</span> <span class="n">cert</span><span class="p">,</span> <span class="n">tls_domain</span><span class="p">,</span> <span class="n">private_key</span><span class="p">,</span> <span class="n">certificate_chain</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">converter</span> <span class="o">=</span> <span class="n">PandasConverter</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<div class="viewcode-block" id="CiphermodeApi.list_users">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_users">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_users</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List all users.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of users.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_users_ids</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_users</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_users</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_users_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_users_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_users_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the IDs of all users.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of user IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_users</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.add_user_role">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.add_user_role">[docs]</a>
+    <span class="k">def</span> <span class="nf">add_user_role</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_id</span><span class="p">,</span> <span class="n">role</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Add a role to a user. Valid roles are:</span>
+<span class="sd">        - &#39;data_owner&#39;: [SMPC] The user can upload datasets and approve computations using them.</span>
+<span class="sd">        - &#39;analyst&#39;: [SMPC] The user can create computations.</span>
+<span class="sd">        - &#39;admin&#39;: [SMPC] The user can perform all actions of &#39;data_owner&#39; and &#39;analyst&#39;, and can modify acls and user roles.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            user_id (str): The ID of the user.</span>
+<span class="sd">            role (str): The role to be added to the user.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the updated user information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">add_user_role</span><span class="p">(</span><span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="n">role</span><span class="p">)</span>
+        <span class="n">users</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_users</span><span class="p">([</span><span class="n">user_id</span><span class="p">])</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_users</span><span class="p">(</span><span class="n">users</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.remove_user_role">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.remove_user_role">[docs]</a>
+    <span class="k">def</span> <span class="nf">remove_user_role</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_id</span><span class="p">,</span> <span class="n">role</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Remove a role from a user.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            user_id (str): The ID of the user.</span>
+<span class="sd">            role (str): The role to be removed from the user.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the updated user information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">remove_user_role</span><span class="p">(</span><span class="n">user_id</span><span class="o">=</span><span class="n">user_id</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="n">role</span><span class="p">)</span>
+        <span class="n">users</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_users</span><span class="p">([</span><span class="n">user_id</span><span class="p">])</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_users</span><span class="p">(</span><span class="n">users</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_groups">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_groups">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_groups</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List all groups.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of groups.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_groups_ids</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_groups</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_groups</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_groups_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_groups_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_groups_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the IDs of all groups.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of group IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_groups</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.run_gc">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.run_gc">[docs]</a>
+    <span class="k">def</span> <span class="nf">run_gc</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Run garbage collection.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            int: The number of collected values.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">run_gc</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.node_connections">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.node_connections">[docs]</a>
+    <span class="k">def</span> <span class="nf">node_connections</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get node connections.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the node connections.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">node_connections</span><span class="p">()</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">node_connections</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.local_node_connections">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.local_node_connections">[docs]</a>
+    <span class="k">def</span> <span class="nf">local_node_connections</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get local node connections.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list: Local node connections.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">local_node_connections</span><span class="p">()</span>
+        <span class="c1"># TODO: reuse things from `self.converter.node_connections`</span>
+        <span class="k">return</span> <span class="n">res</span><span class="o">.</span><span class="n">stats</span><span class="o">.</span><span class="n">connections</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.build_info">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.build_info">[docs]</a>
+    <span class="k">def</span> <span class="nf">build_info</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the build information.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Object: An object containing the build information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">build_info</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.upload_dataset">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.upload_dataset">[docs]</a>
+    <span class="k">def</span> <span class="nf">upload_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;columnwise&#39;</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">credentials</span><span class="o">=</span><span class="p">{},</span> <span class="n">data</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">column_permissions</span><span class="o">=</span><span class="s1">&#39;everything&#39;</span><span class="p">,</span> <span class="n">sql_permissions</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">include_report</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">publish</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">async_init</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">allow_secure_test</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Upload a dataset.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            name (str, optional): The name of the dataset.</span>
+<span class="sd">            description (str, optional): A description of the dataset.</span>
+<span class="sd">            type (str, optional): The type of the dataset. Default is &#39;columnwise&#39;, available options are {&#39;typed_value&#39;, &#39;columnwise&#39;, &#39;rowwise&#39;, &#39;model&#39;}.</span>
+<span class="sd">            endpoint (str, optional): In case of non-local datasets (cloud storage, remote SQL server), the address of the dataset object.</span>
+<span class="sd">            credentials (dict, optional): The credentials to access the dataset in cloud storage. See details in docs for `upload_computation_session_result()&#39;.</span>
+<span class="sd">            data (list, optional): In case of local datasets, the data to upload (CSV files for columnwise/rowwise types, binary data of an ONNX model, or TypedValue JSON otherwise).</span>
+<span class="sd">            column_permissions (str, optional): The column permissions of the dataset. Default is &#39;everything&#39;. Avaliable options are {&#39;everything&#39;, &#39;everything_local&#39;, None}.</span>
+<span class="sd">            sql_permissions (str, optional): The SQL permissions of the dataset.</span>
+<span class="sd">            include_report (bool, optional): Whether to include a report in the upload.</span>
+<span class="sd">            publish (bool, optional): Whether to make dataset visible for all organizations.</span>
+<span class="sd">            async_init (bool, optional): Whether to download the dataset from the `endpoint` asynchronously.</span>
+<span class="sd">            allow_secure_test (bool, optional): Whether to allow the dataset to be used in SecureTest computations.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A pandas Series containing the uploaded dataset.</span>
+
+<span class="sd">            The &#39;id&#39; field in the return value is the ID of the uploaded dataset, which is used to refer</span>
+<span class="sd">            to this dataset in computations and other operations.</span>
+
+<span class="sd">            If async_init was True, user should wait for the dataset to be finalized before using it.</span>
+<span class="sd">            This status of the dataset can be checked by calling `self.get_dataset()` with the returned dataset ID.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            CiphermodeException: If both endpoint and data are specified, or if permissions are given for a non-columnwise dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">endpoint</span> <span class="ow">and</span> <span class="n">data</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                <span class="s1">&#39;Cannot specify both endpoint and data for dataset upload&#39;</span><span class="p">)</span>
+        <span class="n">permissions</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">PermissionConfig</span><span class="p">()</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">column_permissions</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">column_permissions</span> <span class="o">!=</span> <span class="s1">&#39;everything&#39;</span><span class="p">):</span>
+            <span class="k">if</span> <span class="nb">type</span> <span class="o">!=</span> <span class="s1">&#39;columnwise&#39;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                    <span class="s1">&#39;Only columnwise datasets can have column permissions&#39;</span><span class="p">)</span>
+            <span class="n">permissions</span><span class="o">.</span><span class="n">column_permissions</span><span class="o">.</span><span class="n">global_permission</span><span class="o">.</span><span class="n">permission_type</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s1">&#39;everything&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">ColumnPermissions</span><span class="o">.</span><span class="n">Permission</span><span class="o">.</span><span class="n">PermissionType</span><span class="o">.</span><span class="n">EVERYTHING</span><span class="p">,</span>
+                <span class="s1">&#39;everything_local&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">ColumnPermissions</span><span class="o">.</span><span class="n">Permission</span><span class="o">.</span><span class="n">PermissionType</span><span class="o">.</span><span class="n">EVERYTHING_LOCAL</span><span class="p">}[</span><span class="n">column_permissions</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">allow_secure_test</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">sql_permissions</span><span class="p">:</span>
+            <span class="n">default_permissions</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">            {</span>
+<span class="s2">                plaintext_allowed: false,</span>
+<span class="s2">                join_allowed: true,</span>
+<span class="s2">                aggregate_allowed: true,</span>
+<span class="s2">                grouping_allowed: false,</span>
+<span class="s2">                filtering_allowed: true,</span>
+<span class="s2">                aggregate_required: true,</span>
+<span class="s2">                join_required: true,</span>
+<span class="s2">            }</span>
+<span class="s2">            &quot;&quot;&quot;</span>
+            <span class="n">sql_permissions</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;default_permission </span><span class="se">{{</span><span class="s2"> global : </span><span class="si">{</span><span class="n">default_permissions</span><span class="si">}</span><span class="s2">, local : </span><span class="si">{</span><span class="n">default_permissions</span><span class="si">}</span><span class="s2"> </span><span class="se">}}</span><span class="s2">&quot;</span>
+        <span class="k">if</span> <span class="n">sql_permissions</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">type</span> <span class="o">!=</span> <span class="s1">&#39;columnwise&#39;</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                    <span class="s1">&#39;Only columnwise datasets can have SQL permissions&#39;</span><span class="p">)</span>
+            <span class="n">permissions</span><span class="o">.</span><span class="n">sql_column_permissions</span><span class="o">.</span><span class="n">MergeFrom</span><span class="p">(</span>
+                <span class="n">parse_sql_permissions</span><span class="p">(</span><span class="n">sql_permissions</span><span class="p">))</span>
+        <span class="k">if</span> <span class="nb">type</span> <span class="o">==</span> <span class="s1">&#39;onnx_model&#39;</span><span class="p">:</span>
+            <span class="n">data</span> <span class="o">=</span> <span class="n">convert_onnx_model_to_typed_value</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">upload_dataset</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;columnwise&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">DatasetType</span><span class="o">.</span><span class="n">COLUMNWISE_TABLE</span><span class="p">,</span>
+                                              <span class="s1">&#39;rowwise&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">DatasetType</span><span class="o">.</span><span class="n">ROWWISE_TABLE</span><span class="p">,</span>
+                                              <span class="s1">&#39;typed_value&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">DatasetType</span><span class="o">.</span><span class="n">SINGLE_VALUE</span><span class="p">,</span>
+                                              <span class="s1">&#39;onnx_model&#39;</span><span class="p">:</span>  <span class="n">common_pb2</span><span class="o">.</span><span class="n">DatasetType</span><span class="o">.</span><span class="n">SINGLE_VALUE</span><span class="p">}[</span><span class="nb">type</span><span class="p">],</span>
+                                       <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">permissions</span><span class="p">,</span> <span class="n">include_report</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">credentials</span><span class="p">,</span> <span class="n">publish</span><span class="p">,</span> <span class="n">async_init</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_datasets</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.upload_and_publish_dataset">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.upload_and_publish_dataset">[docs]</a>
+    <span class="k">def</span> <span class="nf">upload_and_publish_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Upload a dataset and than make it visible for all organizations.</span>
+
+<span class="sd">        See `upload_dataset` for arguments.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the uploaded and published dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">kwargs</span><span class="p">[</span><span class="s1">&#39;publish&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">upload_dataset</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.publish_dataset">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.publish_dataset">[docs]</a>
+    <span class="k">def</span> <span class="nf">publish_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Make the dataset visible for all organizations.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the published dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">expose_dataset</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_datasets</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_datasets">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_datasets">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_datasets</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List all datasets. For each dataset, lists metadata about the dataset object, but not about the data itself.</span>
+<span class="sd">        e.g. the name, description, visibility, and permissions of the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of datasets.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_datasets_ids</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_datasets</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_datasets</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_datasets_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_datasets_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_datasets_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the IDs of all datasets.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of dataset IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_datasets</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.show_dataset">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.show_dataset">[docs]</a>
+    <span class="k">def</span> <span class="nf">show_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Display metadata about the dataset with the specified ID.</span>
+<span class="sd">        Returns metadata about the data stored in this object, e.g. the number of rows and columns,</span>
+<span class="sd">        the type of data in the table, permissions, and the number of shards (if applicable).</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dataset_id (str): The ID of the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the dataset information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_datasets</span><span class="p">([</span><span class="n">dataset_id</span><span class="p">])</span>
+        <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">resp</span><span class="p">,</span> <span class="o">*</span><span class="n">__</span><span class="p">)</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">dataset_values</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">get_dataset_values</span><span class="p">(</span><span class="n">dataset_id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">show_dataset</span><span class="p">(</span><span class="n">resp</span><span class="o">.</span><span class="n">dataset</span><span class="p">,</span> <span class="n">dataset_values</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_dataset">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_dataset">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get information about the dataset with the specified ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dataset_id (str): The ID of the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Dataset: Metadata about the dataset with the specified ID, e.g. name, description, visibility, permissions.</span>
+<span class="sd">            Does not return metadata about the data itself.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="p">(</span><span class="n">_</span><span class="p">,</span> <span class="n">resp</span><span class="p">,</span> <span class="o">*</span><span class="n">__</span><span class="p">)</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_datasets</span><span class="p">([</span><span class="n">dataset_id</span><span class="p">])[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">dataset</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.delete_dataset">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.delete_dataset">[docs]</a>
+    <span class="k">def</span> <span class="nf">delete_dataset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Delete dataset with the specified ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dataset_id (str): The ID of the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            bool: True if dataset was successfully deleted.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">delete_dataset</span><span class="p">(</span><span class="n">dataset_id</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_report">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_report">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_report</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get the report of the specified dataset.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dataset_id (str): The ID of the dataset.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            Report (str): The report of the specified dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">get_report</span><span class="p">(</span><span class="n">dataset_id</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.upload_graph">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.upload_graph">[docs]</a>
+    <span class="k">def</span> <span class="nf">upload_graph</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">serialized_graph</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Upload a serialized graph.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            serialized_graph (str): The serialized Ciphercore graph to upload.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the uploaded graph information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">upload_graph</span><span class="p">(</span><span class="n">serialized_graph</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_graphs</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.download_graph">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.download_graph">[docs]</a>
+    <span class="k">def</span> <span class="nf">download_graph</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Download a graph with the specified ID.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the graph.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The serialized Ciphercore graph.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">download_graph</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_graphs">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_graphs">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_graphs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List all Ciphercore graphs currently uploaded.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of graphs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_graphs_ids</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_graphs</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_graphs</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_graphs_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_graphs_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_graphs_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the IDs of all graphs.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of graph IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_graphs</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">orchestrator</span><span class="p">,</span> <span class="n">graphs_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a computation.</span>
+
+<span class="sd">        Computation object specifies what computation to execute, regardless of the data. The same computation</span>
+<span class="sd">        can be used multiple times with different datasets.</span>
+<span class="sd">        Note that there are easier-to-use functions for specific computations (PSI, SQL, NN training, etc.).</span>
+<span class="sd">        We strongly recommend using those functions when possible.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            orchestrator (str): The orchestrator type for the computation.</span>
+<span class="sd">            graphs_config (dict): The &quot;graph name -&gt; graph ID&quot; mapping.</span>
+<span class="sd">            name (str): The name of the computation.</span>
+<span class="sd">            description (str): The description of the computation.</span>
+<span class="sd">            config (dict, optional): Additional orchestrator-specific configuration for the computation.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation information.</span>
+<span class="sd">            The &#39;id&#39; field of this DataFrame is the ID of the created computation, </span>
+<span class="sd">            which is used to refer to this computation in other operations.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="n">orchestrator</span><span class="p">,</span> <span class="n">graphs_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computations</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_single_graph_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_single_graph_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_single_graph_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">serialized_graph</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a single graph computation. These computations are usually used for testing or basic examples, </span>
+<span class="sd">        e.g. computing the sum of two numbers with SMPC. </span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            serialized_graph (str): The serialized Ciphercore graph to create a computation for.</span>
+<span class="sd">            name (str, optional): The name of the computation.</span>
+<span class="sd">            description (str, optional): The description of the computation.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">upload_graph</span><span class="p">(</span><span class="n">serialized_graph</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">res</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span>
+        <span class="n">graph_id</span> <span class="o">=</span> <span class="n">res</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;single_graph&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;graph&quot;</span><span class="p">:</span> <span class="n">graph_id</span><span class="p">},</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computations</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_computations">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_computations">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_computations</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List all computations.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of computations.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_computations_ids</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_computations</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computations</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_computations_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_computations_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_computations_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List the IDs of all computations.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of computation IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_computations</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_cloud_uploads">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_cloud_uploads">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_cloud_uploads</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List all cloud uploads.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of cloud uploads.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_cloud_uploads</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_cloud_uploads</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_cloud_uploads</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_cloud_upload">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_cloud_upload">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_cloud_upload</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get cloud upload with the specified ID. Used to track the progress of uploading a particular computation</span>
+<span class="sd">        session result to cloud storage.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the cloud upload information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_cloud_uploads</span><span class="p">([</span><span class="nb">id</span><span class="p">])</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_cloud_uploads</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_psi_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_psi_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_psi_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first_dataset_columns</span><span class="p">,</span> <span class="n">second_dataset_columns</span><span class="p">,</span> <span class="n">sharded</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a PSI (Private Set Intersection) computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            first_dataset_columns (list[str]): The list of columns from the first dataset to join.</span>
+<span class="sd">            second_dataset_columns (list[str]): The list of columns from the second dataset to join.</span>
+<span class="sd">            sharded (bool, optional): Whether to shard the computation. This is useful for reducing</span>
+<span class="sd">            the memory usage of a computation on large datasets. Default is True.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID of the created computation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">first_dataset_columns</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">second_dataset_columns</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;first_dataset_columns and second_dataset_columns should be lists of strings.&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">first_dataset_columns</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">second_dataset_columns</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s1">&#39;first_dataset_columns and second_dataset_columns should have the same length.&#39;</span><span class="p">)</span>
+        <span class="c1"># TODO: for efficiency reasons, maybe reuse existing computation, if columns match?</span>
+        <span class="n">join_column_pairs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">first_col</span><span class="p">,</span> <span class="n">second_col</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">first_dataset_columns</span><span class="p">,</span> <span class="n">second_dataset_columns</span><span class="p">):</span>
+            <span class="n">join_column_pairs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="n">common_pb2</span><span class="o">.</span><span class="n">JoinColumnPair</span><span class="p">(</span>
+                    <span class="n">first_dataset_column</span><span class="o">=</span><span class="n">first_col</span><span class="p">,</span>
+                    <span class="n">second_dataset_column</span><span class="o">=</span><span class="n">second_col</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">OrchestratorConfig</span><span class="p">(</span>
+            <span class="n">psi_config</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">PsiConfig</span><span class="p">(</span>
+                <span class="n">join_columns</span><span class="o">=</span><span class="n">join_column_pairs</span><span class="p">,</span>
+                <span class="n">sharded</span><span class="o">=</span><span class="n">sharded</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;psi&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;PSI of </span><span class="si">{}</span><span class="s1"> and </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">first_dataset_columns</span><span class="p">,</span> <span class="n">second_dataset_columns</span><span class="p">),</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_mlp_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_mlp_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_mlp_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">layers</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="n">loss</span><span class="p">,</span> <span class="n">epochs</span><span class="p">,</span> <span class="n">precision</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create an MLP (Multi-Layer Perceptron) computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            layers (list): The list with the sizes of hidden layers in the MLP (note that the last one should be 1 in most cases).</span>
+<span class="sd">            batch_size (int): The batch size for training.</span>
+<span class="sd">            optimizer (str): The optimizer to use for training (we currently support &#39;adam&#39;, &#39;adagrad&#39; and &#39;sgd&#39;).</span>
+<span class="sd">            learning_rate (float): The learning rate for training.</span>
+<span class="sd">            loss (str): The loss function to use for training (we currently support &#39;log_loss&#39; and &#39;mse&#39;).</span>
+<span class="sd">            epochs (int): The number of epochs for training.</span>
+<span class="sd">            precision (int): The precision for training (it is conducted with fixed precision numbers, with `2**precision` as denominator).</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID of the created computation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">config</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">OrchestratorConfig</span><span class="p">(</span>
+            <span class="n">ml_config</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">MlpConfig</span><span class="p">(</span><span class="n">hidden_layers</span><span class="o">=</span><span class="n">layers</span><span class="p">,</span>
+                                           <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="n">optimizer</span><span class="p">,</span>
+                                           <span class="n">learning_rate</span><span class="o">=</span><span class="n">learning_rate</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="n">loss</span><span class="p">,</span>
+                                           <span class="n">epochs</span><span class="o">=</span><span class="n">epochs</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">precision</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;neural_network_training&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="sa">f</span><span class="s1">&#39;MLP with </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span><span class="si">}</span><span class="s1"> layers&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">config</span><span class="p">),</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_nn_inference_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_nn_inference_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_nn_inference_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">precision</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a neural network inference computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            batch_size (int): The batch size for inference, should be the same as for training.</span>
+<span class="sd">            precision (int): The precision for inference, should be the same as for training.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID of the created computation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">OrchestratorConfig</span><span class="p">(</span><span class="n">nn_inference_config</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">NnInferenceConfig</span><span class="p">(</span>
+            <span class="n">batch_size</span><span class="o">=</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="n">precision</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;neural_network_inference&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;NN Inference&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">config</span><span class="p">),</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_llm_inference_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_llm_inference_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_llm_inference_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">max_len</span><span class="p">,</span> <span class="n">num_layers</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">top_p</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a LLM inference computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            max_len (int): The maximum length of the generated text.</span>
+<span class="sd">            num_layers (int): The number of layers in the transformer.</span>
+<span class="sd">            embedding_dim (int): The embedding dimension of the transformer.</span>
+<span class="sd">            num_heads (int): The number of heads in the transformer.</span>
+<span class="sd">            temperature (float): The temperature for the sampling.</span>
+<span class="sd">            top_p (float): The top p for the sampling.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID of the created computation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">OrchestratorConfig</span><span class="p">(</span><span class="n">llm_inference_config</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">LlmInferenceConfig</span><span class="p">(</span>
+            <span class="n">max_len</span><span class="o">=</span><span class="n">max_len</span><span class="p">,</span> <span class="n">num_layers</span><span class="o">=</span><span class="n">num_layers</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="o">=</span><span class="n">embedding_dim</span><span class="p">,</span> <span class="n">num_heads</span><span class="o">=</span><span class="n">num_heads</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">temperature</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="n">top_p</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;llm_inference&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;LLM Inference&#39;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">config</span><span class="p">),</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_sql_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_sql_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_sql_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create an SQL computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            query (str): The SQL query to execute. It can refer to tables by names, these names need to be specified in the corresponding computation session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID of the created computation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># TODO: for efficiency reasons, maybe reuse existing computation, if query is the same?</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">OrchestratorConfig</span><span class="p">(</span>
+            <span class="n">sql_config</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">SqlConfig</span><span class="p">(</span>
+                <span class="n">query</span><span class="o">=</span><span class="n">query</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;sql&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;SQL query: </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">query</span><span class="p">),</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.get_knn_computation">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.get_knn_computation">[docs]</a>
+    <span class="k">def</span> <span class="nf">get_knn_computation</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">num_neighbors</span><span class="p">,</span> <span class="n">has_labels</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a KNN (k-nearest-neighbors) computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            num_neighbors (int): The number of neighbors to consider in the KNN computation.</span>
+<span class="sd">            has_labels (bool, optional): Whether the input data has labels. Default is False.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            str: The ID of the created computation.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># TODO: for efficiency reasons, maybe reuse existing computation, if num_neighbors is the same?</span>
+        <span class="n">config</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">OrchestratorConfig</span><span class="p">(</span>
+            <span class="n">knn_config</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">KnnConfig</span><span class="p">(</span>
+                <span class="n">num_neighbors</span><span class="o">=</span><span class="n">num_neighbors</span><span class="p">,</span>
+                <span class="n">label_aggregation</span><span class="o">=</span><span class="n">common_pb2</span><span class="o">.</span><span class="n">KnnConfig</span><span class="o">.</span><span class="n">LabelAggregation</span><span class="o">.</span><span class="n">MEAN</span> <span class="k">if</span> <span class="n">has_labels</span> <span class="k">else</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">KnnConfig</span><span class="o">.</span><span class="n">LabelAggregation</span><span class="o">.</span><span class="n">NONE</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation</span><span class="p">(</span>
+            <span class="s1">&#39;nearest_neighbors&#39;</span><span class="p">,</span> <span class="p">{},</span> <span class="s1">&#39;KNN[neighbors=</span><span class="si">{}</span><span class="s1">]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">num_neighbors</span><span class="p">),</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">config</span><span class="o">=</span><span class="n">config</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_computation_session">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_computation_session">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_computation_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a computation session. A computation session is an instantiation of a computation on specific datasets,</span>
+<span class="sd">        specified by the data_config argument.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            computation_id (str): The ID of the computation.</span>
+<span class="sd">            data_config (dict): The mapping (name -&gt; dataset ID). Names are orchestrator-specific (see orchestrator-specific functions for details, e.g. `create_psi`).</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A pandas Series containing the created computation session information.</span>
+<span class="sd">            The &#39;id&#39; in this Series is the ID of the created computation session, </span>
+<span class="sd">            which is used to refer to this session in other operations.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">expose_computation</span><span class="p">(</span><span class="n">computation_id</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span>
+            <span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computation_sessions</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_psi">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_psi">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_psi</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first_dataset_id</span><span class="p">,</span> <span class="n">second_dataset_id</span><span class="p">,</span> <span class="n">first_dataset_columns</span><span class="p">,</span> <span class="n">second_dataset_columns</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">sharded</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a PSI (Private Set Intersection) computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            first_dataset_id (str): The ID of the first dataset.</span>
+<span class="sd">            second_dataset_id (str): The ID of the second dataset.</span>
+<span class="sd">            first_dataset_columns (list[str]): The column from the first dataset to join.</span>
+<span class="sd">            second_dataset_columns (list[str]): The column from the second dataset to join.</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+<span class="sd">            sharded (bool, optional): Whether to shard the computation. Default is True.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            A pandas Series containing the created computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">computation_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_psi_computation</span><span class="p">(</span>
+            <span class="n">first_dataset_columns</span><span class="p">,</span> <span class="n">second_dataset_columns</span><span class="p">,</span> <span class="n">sharded</span><span class="p">)</span>
+        <span class="n">data_config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;input_0&#39;</span><span class="p">:</span> <span class="n">first_dataset_id</span><span class="p">,</span>
+                       <span class="s1">&#39;input_1&#39;</span><span class="p">:</span> <span class="n">second_dataset_id</span><span class="p">}</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span><span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_sql">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_sql">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_sql</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create an SQL computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            query (str): The SQL query to execute. The query should refer to columns with lowercase names.</span>
+<span class="sd">            data_config (dict): The mapping (table name -&gt; dataset ID). SQL queries refer to datasets by the table names in this mapping.</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">computation_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_sql_computation</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span><span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_mlp">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_mlp">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_mlp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">train_datasets</span><span class="p">,</span> <span class="n">validation_datasets</span><span class="p">,</span> <span class="n">test_datasets</span><span class="p">,</span> <span class="n">model_dataset</span><span class="p">,</span>
+                   <span class="n">layers</span><span class="o">=</span><span class="p">[</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">optimizer</span><span class="o">=</span><span class="s1">&#39;adam&#39;</span><span class="p">,</span>
+                   <span class="n">learning_rate</span><span class="o">=</span><span class="mf">3e-4</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;log_loss&#39;</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span>
+                   <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create an MLP (Multi-Layer Perceptron) training computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            train_datasets (list): The list of training dataset IDs.</span>
+<span class="sd">            validation_datasets (list): The list of validation dataset IDs.</span>
+<span class="sd">            test_datasets (list): The list of testing dataset IDs.</span>
+<span class="sd">            layers (list, optional): List of hidden layer sizes in the MLP (in most cases, the last one should be 1). Default is [100, 1].</span>
+<span class="sd">            batch_size (int, optional): Batch size for training. Default is 64.</span>
+<span class="sd">            optimizer (str, optional): Optimizer to use for training. Default is &#39;adam&#39;, supported optimizers are &#39;adam&#39;, &#39;adagrad&#39;, &#39;sgd&#39;.</span>
+<span class="sd">            learning_rate (float, optional): Learning rate for training. Default is 3e-4.</span>
+<span class="sd">            loss (str, optional): Loss function to use for training. Default is &#39;log_loss&#39;, supported losses are &#39;log_loss&#39; and &#39;mse&#39;.</span>
+<span class="sd">            epochs (int, optional): Number of epochs for training. Default is 3.</span>
+<span class="sd">            precision (int, optional): Precision for training. Default is 15. Training is performed in fixed-point arithmetic with denominator `2**precision`.</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">def</span> <span class="nf">config_for_datasets</span><span class="p">(</span><span class="n">datasets</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+            <span class="k">return</span> <span class="p">{</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">:</span> <span class="nb">id</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="nb">id</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">datasets</span><span class="p">)}</span>
+        <span class="k">if</span> <span class="n">model_dataset</span><span class="p">:</span>
+            <span class="n">data_config</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">config_for_datasets</span><span class="p">(</span><span class="n">train_datasets</span><span class="p">,</span> <span class="s1">&#39;training&#39;</span><span class="p">),</span> <span class="o">**</span><span class="n">config_for_datasets</span><span class="p">(</span>
+                <span class="n">validation_datasets</span><span class="p">,</span> <span class="s1">&#39;validation&#39;</span><span class="p">),</span> <span class="o">**</span><span class="n">config_for_datasets</span><span class="p">(</span><span class="n">test_datasets</span><span class="p">,</span> <span class="s1">&#39;testing&#39;</span><span class="p">),</span> <span class="o">**</span><span class="n">config_for_datasets</span><span class="p">([</span><span class="n">model_dataset</span><span class="p">],</span> <span class="s1">&#39;model&#39;</span><span class="p">)}</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">data_config</span> <span class="o">=</span> <span class="p">{</span><span class="o">**</span><span class="n">config_for_datasets</span><span class="p">(</span><span class="n">train_datasets</span><span class="p">,</span> <span class="s1">&#39;training&#39;</span><span class="p">),</span> <span class="o">**</span><span class="n">config_for_datasets</span><span class="p">(</span>
+                <span class="n">validation_datasets</span><span class="p">,</span> <span class="s1">&#39;validation&#39;</span><span class="p">),</span> <span class="o">**</span><span class="n">config_for_datasets</span><span class="p">(</span><span class="n">test_datasets</span><span class="p">,</span> <span class="s1">&#39;testing&#39;</span><span class="p">)}</span>
+        <span class="n">loss</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;mse&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">MlpConfig</span><span class="o">.</span><span class="n">MSE</span><span class="p">,</span>
+                <span class="s1">&#39;log_loss&#39;</span><span class="p">:</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">MlpConfig</span><span class="o">.</span><span class="n">LOG_LOSS</span><span class="p">}[</span><span class="n">loss</span><span class="p">]</span>
+        <span class="n">computation_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_mlp_computation</span><span class="p">(</span>
+            <span class="n">layers</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">learning_rate</span><span class="p">,</span> <span class="n">loss</span><span class="p">,</span> <span class="n">epochs</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span><span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_nn_inference">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_nn_inference">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_nn_inference</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inference_dataset_id</span><span class="p">,</span> <span class="n">model_dataset_id</span><span class="p">,</span> <span class="n">batch_size</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">precision</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a neural network inference computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            inference_dataset_id (str): The ID of the inference dataset.</span>
+<span class="sd">            model_dataset_id (str): The ID of the model dataset.</span>
+<span class="sd">            batch_size (int, optional): The batch size for inference. Default is 64, should be the same as for training.</span>
+<span class="sd">            precision (int, optional): The precision for inference. Default is 15, should be the same as for training.</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data_config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;inference0&#39;</span><span class="p">:</span> <span class="n">inference_dataset_id</span><span class="p">,</span>
+                       <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">model_dataset_id</span><span class="p">}</span>
+        <span class="n">computation_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_nn_inference_computation</span><span class="p">(</span>
+            <span class="n">batch_size</span><span class="p">,</span> <span class="n">precision</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span><span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_llm_inference">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_llm_inference">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_llm_inference</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inference_dataset_id</span><span class="p">,</span> <span class="n">model_dataset_id</span><span class="p">,</span> <span class="n">max_len</span><span class="o">=</span><span class="mi">128</span><span class="p">,</span> <span class="n">num_layers</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="o">=</span><span class="mi">512</span><span class="p">,</span>
+                             <span class="n">num_heads</span><span class="o">=</span><span class="mi">16</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span> <span class="n">top_p</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span>
+                             <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a LLM inference computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            inference_dataset_id (str): The ID of the inference dataset.</span>
+<span class="sd">            model_dataset_id (str): The ID of the model dataset.</span>
+<span class="sd">            max_len (int, optional): The maximum length of the generated sequence.</span>
+<span class="sd">            num_layers (int, optional): The number of layers in the model.</span>
+<span class="sd">            embedding_dim (int, optional): The embedding dimension of the model.</span>
+<span class="sd">            num_heads (int, optional): The number of attention heads in the model.</span>
+<span class="sd">            temperature (float, optional): The temperature for sampling.</span>
+<span class="sd">            top_p (float, optional): The top-p heuristic value for sampling.</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data_config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;prompt&#39;</span><span class="p">:</span> <span class="n">inference_dataset_id</span><span class="p">,</span>
+                       <span class="s1">&#39;model&#39;</span><span class="p">:</span> <span class="n">model_dataset_id</span><span class="p">}</span>
+        <span class="n">computation_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_llm_inference_computation</span><span class="p">(</span>
+            <span class="n">max_len</span><span class="p">,</span> <span class="n">num_layers</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">,</span> <span class="n">num_heads</span><span class="p">,</span> <span class="n">temperature</span><span class="p">,</span> <span class="n">top_p</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span><span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_knn">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_knn">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_knn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key_dataset_id</span><span class="p">,</span> <span class="n">query_dataset_id</span><span class="p">,</span> <span class="n">num_neighbors</span><span class="p">,</span> <span class="n">value_dataset_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a KNN (k-Nearest-Neighbors) computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            key_dataset_id (str): The ID of the rowwise dataset with lookup keys (vectors).</span>
+<span class="sd">            query_dataset_id (str): The ID of the rowwise dataset with lookup queries (vectors).</span>
+<span class="sd">            num_neighbors (int): The number of neighbors to consider in the KNN computation.</span>
+<span class="sd">            value_dataset_id (str, optional): The ID of the dataset with labels. Default is None.</span>
+<span class="sd">            name (str, optional): The name of the session.</span>
+<span class="sd">            description (str, optional): The description of the session.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the created computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">data_config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;keys&#39;</span><span class="p">:</span> <span class="n">key_dataset_id</span><span class="p">,</span> <span class="s1">&#39;queries&#39;</span><span class="p">:</span> <span class="n">query_dataset_id</span><span class="p">}</span>
+        <span class="k">if</span> <span class="n">value_dataset_id</span><span class="p">:</span>
+            <span class="n">data_config</span><span class="p">[</span><span class="s1">&#39;values&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">value_dataset_id</span>
+        <span class="n">computation_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_knn_computation</span><span class="p">(</span>
+            <span class="n">num_neighbors</span><span class="p">,</span> <span class="n">has_labels</span><span class="o">=</span><span class="p">(</span><span class="n">value_dataset_id</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">))</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">create_computation_session</span><span class="p">(</span><span class="n">computation_id</span><span class="p">,</span> <span class="n">data_config</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_computation_sessions">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_computation_sessions">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_computation_sessions</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filter_computation_session_ids</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">show_tags</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List computation sessions.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            filter_computation_session_ids (list[str], optional): List of specific computation session IDs to return.</span>
+<span class="sd">                If None, all computation sessions are returned. Default is None.</span>
+<span class="sd">            show_tags (bool, optional): Whether to include the tags column.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of computation sessions.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="n">filter_computation_session_ids</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">filter_computation_session_ids</span><span class="p">:</span>
+            <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_computation_sessions_ids</span><span class="p">()</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_computation_sessions</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computation_sessions</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">show_tags</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_computation_sessions_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_computation_sessions_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_computation_sessions_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        List computation session IDs.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of computation session IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_computation_sessions</span><span class="p">()</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.tag_computation_session">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.tag_computation_session">[docs]</a>
+    <span class="k">def</span> <span class="nf">tag_computation_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Tag computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the computation session to start.</span>
+<span class="sd">            key (str): Tag key.</span>
+<span class="sd">            value (str, optional): Tag value. If None, the tag with a given key is removed instead.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">tag_computation_session</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.start_computation_session">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.start_computation_session">[docs]</a>
+    <span class="k">def</span> <span class="nf">start_computation_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Start a specific computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the computation session to start.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the started computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">start_computation_session</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computation_sessions</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.cancel_computation_session">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.cancel_computation_session">[docs]</a>
+    <span class="k">def</span> <span class="nf">cancel_computation_session</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Cancel a specific computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the computation session to cancel.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the cancelled computation session information.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">cancel_computation_session</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_computation_sessions</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.download_computation_session_result">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.download_computation_session_result">[docs]</a>
+    <span class="k">def</span> <span class="nf">download_computation_session_result</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">onnx</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Download the result of a specific computation session.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the computation session to download.</span>
+<span class="sd">            onnx (bool, optional): Whether to convert the result to ONNX protobuf. Default is False.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the downloaded computation session result.</span>
+
+<span class="sd">        Raises:</span>
+<span class="sd">            CiphermodeException: if more than one of csv, onnx and float_array is set.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">session</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_computation_sessions</span><span class="p">([</span><span class="nb">id</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">computation</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_computations</span><span class="p">(</span>
+            <span class="p">[</span><span class="n">session</span><span class="o">.</span><span class="n">computation_id</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">computation</span>
+        <span class="n">orchestrator</span> <span class="o">=</span> <span class="n">computation</span><span class="o">.</span><span class="n">orchestrator_name</span>
+        <span class="k">if</span> <span class="n">onnx</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">orchestrator</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;neural_network_training&#39;</span><span class="p">]:</span>
+                <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                    <span class="s1">&#39;Cannot convert to onnx for orchestrator </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">orchestrator</span><span class="p">))</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">results</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span><span class="s1">&#39;Session contains no results&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                <span class="s1">&#39;Not implemented: session contains multiple results&#39;</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">output_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">outputs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">output_keys</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                <span class="s1">&#39;Not implemented: session result contains multiple outputs&#39;</span><span class="p">)</span>
+        <span class="n">output_key</span> <span class="o">=</span> <span class="n">output_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">payload</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">download_computation_session_output</span><span class="p">(</span>
+            <span class="nb">id</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">output_key</span><span class="p">)</span>
+        <span class="n">output_format</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">outputs</span><span class="p">[</span><span class="n">output_key</span><span class="p">]</span><span class="o">.</span><span class="n">output_format</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">view_typed_value</span><span class="p">(</span><span class="n">payload</span><span class="p">,</span> <span class="n">output_format</span><span class="p">,</span> <span class="n">onnx</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.upload_computation_session_result">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.upload_computation_session_result">[docs]</a>
+    <span class="k">def</span> <span class="nf">upload_computation_session_result</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">credentials</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Uploads the result of a computation session to a specified endpoint.</span>
+<span class="sd">        The endpoint should be a valid filename within a cloud storage bucket for a supported cloud provider (AWS, GCP, or Azure).</span>
+<span class="sd">        </span>
+<span class="sd">        Credentials is a dictionary that has the user&#39;s cloud storage credentials.</span>
+<span class="sd">        Possible keys are &#39;aws_access_key_id&#39;, &#39;aws_secret_access_key&#39;, and &#39;aws_session_token&#39; for AWS credentials,</span>
+<span class="sd">          &#39;gcp_access_key_id&#39;, &#39;gcp_secret_access_key&#39;, and &#39;gcp_session_token&#39; for GCP credentials, </span>
+<span class="sd">          and &#39;secret_key&#39; for Azure credentials. Credentials for multiple providers can be passed in at once.</span>
+
+<span class="sd">        We will parse the cloud provider from the `endpoint`, then look in the `credentials` dictionary to find </span>
+<span class="sd">        the relevant credentials for this cloud provider. Credentials can be left empty if the endpoint is public.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the computation session.</span>
+<span class="sd">            endpoint (str): The endpoint to which the computation session result will be uploaded.</span>
+<span class="sd">            credentials (dict): The credentials to access the endpoint.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the new dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">session</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_computation_sessions</span><span class="p">([</span><span class="nb">id</span><span class="p">])[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">data</span>
+        <span class="n">results</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">results</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                <span class="s1">&#39;Not implemented: session contains multiple results&#39;</span><span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">output_keys</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">result</span><span class="o">.</span><span class="n">outputs</span><span class="o">.</span><span class="n">keys</span><span class="p">())</span>
+        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">output_keys</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">CiphermodeException</span><span class="p">(</span>
+                <span class="s1">&#39;Not implemented: session result contains multiple outputs&#39;</span><span class="p">)</span>
+        <span class="n">output_key</span> <span class="o">=</span> <span class="n">output_keys</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">upload_computation_session_output</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">output_key</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.save_computation_session_result">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.save_computation_session_result">[docs]</a>
+    <span class="k">def</span> <span class="nf">save_computation_session_result</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">as_csv</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">include_summary</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">sql_permissions</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">publish</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Saves the result of a computation session to a new dataset.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the computation session.</span>
+<span class="sd">            name (str, optional): The name to assign to the dataset.</span>
+<span class="sd">            description (str, optional): The description to assign to the dataset.</span>
+<span class="sd">            as_csv (bool, optional): Whether to treat the computation result as a CSV-like table (results in a columnwise dataset).</span>
+<span class="sd">            include_summary (bool, optional): Whether to include a dataset summary for the newly created dataset.</span>
+<span class="sd">            sql_permissions (str, optional): The SQL permissions to assign to the dataset.</span>
+<span class="sd">            publish (bool, optional): Whether to make dataset visible for all organizations.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the new dataset.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">permissions</span> <span class="o">=</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">PermissionConfig</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">sql_permissions</span><span class="p">:</span>
+            <span class="n">permissions</span><span class="o">.</span><span class="n">sql_column_permissions</span><span class="o">.</span><span class="n">MergeFrom</span><span class="p">(</span>
+                <span class="n">parse_sql_permissions</span><span class="p">(</span><span class="n">sql_permissions</span><span class="p">))</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">save_computation_session_result</span><span class="p">(</span>
+            <span class="nb">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">permissions</span><span class="p">,</span> <span class="n">as_csv</span><span class="o">=</span><span class="n">as_csv</span><span class="p">,</span> <span class="n">include_report</span><span class="o">=</span><span class="n">include_summary</span><span class="p">,</span> <span class="n">publish</span><span class="o">=</span><span class="n">publish</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_datasets</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_data_requests">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_data_requests">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_data_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filter_computation_session_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">filter_can_approve</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Lists data requests.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            filter_computation_session_id (str, optional): If provided, only data requests for this computation session ID will be returned.</span>
+<span class="sd">            filter_can_approve (bool): If true, only data requests that the user can approve will be returned.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the list of data requests.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">ids</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">list_data_requests_ids</span><span class="p">(</span><span class="n">filter_computation_session_id</span><span class="p">,</span> <span class="n">filter_can_approve</span><span class="p">)</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">populate_data_approvals</span><span class="p">(</span><span class="n">ids</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_data_approvals</span><span class="p">(</span><span class="n">res</span><span class="p">,</span> <span class="n">filter_computation_session_id</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_data_requests_ids">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_data_requests_ids">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_data_requests_ids</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filter_computation_session_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">filter_can_approve</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Lists the IDs of data requests.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            filter_computation_session_id (str, optional): If provided, only data requests for this computation session ID will be returned.</span>
+<span class="sd">            filter_can_approve (bool): If true, only data requests that the user can approve will be returned.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            list[str]: A list of data request IDs.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_data_approvals</span><span class="p">(</span><span class="n">filter_computation_session_id</span><span class="p">,</span> <span class="n">filter_can_approve</span><span class="p">)</span></div>
+
+
+    <span class="k">def</span> <span class="nf">_update_data_approval</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">update_data_approval</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">status</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_data_approvals</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+
+<div class="viewcode-block" id="CiphermodeApi.approve_data_request">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.approve_data_request">[docs]</a>
+    <span class="k">def</span> <span class="nf">approve_data_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Approves a data request.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the data request to approve.</span>
+<span class="sd">            comment (str, optional): A comment to attach to the data request.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the approved data request.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_data_approval</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">DataApproval</span><span class="o">.</span><span class="n">APPROVED</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.reject_data_request">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.reject_data_request">[docs]</a>
+    <span class="k">def</span> <span class="nf">reject_data_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Rejects a data request.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the data request to reject.</span>
+<span class="sd">            comment (str, optional): A comment to attach to the data request.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the rejected data request.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_data_approval</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">common_pb2</span><span class="o">.</span><span class="n">DataApproval</span><span class="o">.</span><span class="n">REJECTED</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.comment_data_request">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.comment_data_request">[docs]</a>
+    <span class="k">def</span> <span class="nf">comment_data_request</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="nb">id</span><span class="p">,</span> <span class="n">comment</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Comments on a data request.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            id (str): The ID of the data request to comment on.</span>
+<span class="sd">            comment (str): The comment to attach to the data request.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing the commented data request.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_update_data_approval</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="kc">None</span><span class="p">,</span> <span class="n">comment</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.create_explore_dataset_intersection">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.create_explore_dataset_intersection">[docs]</a>
+    <span class="k">def</span> <span class="nf">create_explore_dataset_intersection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id1</span><span class="p">,</span> <span class="n">dataset_id2</span><span class="p">,</span> <span class="n">column_names1</span><span class="p">,</span> <span class="n">column_names2</span><span class="p">,</span> <span class="n">use_approx_match_rate</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Creates an exploration of the intersection between two datasets.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dataset_id1 (str): The ID of the first dataset.</span>
+<span class="sd">            dataset_id2 (str): The ID of the second dataset.</span>
+<span class="sd">            column_names1 (list(str)): Names of the columns in the first dataset to compare.</span>
+<span class="sd">            column_names2 (list(str)): Names of the columns in the second dataset to compare.</span>
+<span class="sd">            use_approx_match_rate (bool, optional): Whether to use approximate match rate. Default is False.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            String: computation_session_id</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">create_explore_dataset_intersection</span><span class="p">(</span>
+            <span class="n">dataset_id1</span><span class="p">,</span> <span class="n">dataset_id2</span><span class="p">,</span> <span class="n">column_names1</span><span class="p">,</span> <span class="n">column_names2</span><span class="p">,</span> <span class="n">use_approx_match_rate</span><span class="o">=</span><span class="n">use_approx_match_rate</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.poll_explore_dataset_intersection">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.poll_explore_dataset_intersection">[docs]</a>
+    <span class="k">def</span> <span class="nf">poll_explore_dataset_intersection</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session_id</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Polls the exploration of a dataset intersection.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            session_id (str): The session id associated with the dataset intersection exploration.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            ExploreDatasetIntersectionResponse: Object containing explore computation details.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">poll_explore_dataset_intersection</span><span class="p">(</span><span class="n">session_id</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_user_events">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_user_events">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_user_events</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestamp_ms</span><span class="p">,</span> <span class="n">num_events</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Lists user audit events up to a given timestamp. Admin only.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            timestamp_ms (int): Timestamp, in milliseconds.</span>
+<span class="sd">            num_events (int): Number of events to fetch.</span>
+<span class="sd">            user (str, optional): Email address to filter events on.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing user audit events.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_user_events</span><span class="p">(</span><span class="n">timestamp_ms</span><span class="p">,</span> <span class="n">num_events</span><span class="p">,</span> <span class="n">user</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_user_events</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.list_node_events">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.list_node_events">[docs]</a>
+    <span class="k">def</span> <span class="nf">list_node_events</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">timestamp_ms</span><span class="p">,</span> <span class="n">num_events</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Lists node audit events up to a given timestamp. Admin only.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            timestamp_ms (int): Timestamp, in milliseconds.</span>
+<span class="sd">            num_events (int): Number of events to fetch.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            DataFrame: A pandas DataFrame containing node audit events.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">list_node_events</span><span class="p">(</span><span class="n">timestamp_ms</span><span class="p">,</span> <span class="n">num_events</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_node_events</span><span class="p">(</span><span class="n">res</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.hash_dataset_columns">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.hash_dataset_columns">[docs]</a>
+    <span class="k">def</span> <span class="nf">hash_dataset_columns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dataset_id</span><span class="p">,</span> <span class="n">hash_column_names</span><span class="p">,</span> <span class="n">new_dataset_name</span><span class="p">,</span> <span class="n">async_init</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Hashes entries of dataset with given column names to create a succinct representation of the input dataset.</span>
+
+<span class="sd">        Succinct representations output by this method can be matched with `create_psi` to get hash values</span>
+<span class="sd">        they have in common.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            dataset_id (str): The dataset ID.</span>
+<span class="sd">            hash_column_names (list[str]): Columns from the dataset to hash.</span>
+<span class="sd">            new_dataset_name (str): New dataset name.</span>
+<span class="sd">            async_init (bool, optional): If true, function returns immediately after creating new dataset object and populates it with hashes asynchronously.</span>
+<span class="sd">    </span>
+<span class="sd">        Returns:</span>
+<span class="sd">            A pandas Series containing the dataset ID for the succinct representation.</span>
+
+<span class="sd">            This dataset contains a single column of (de-duplicated) hash values, each value corresponding to </span>
+<span class="sd">            some set of rows in the input dataset where entries indexed by columns in `hash_column_names` </span>
+<span class="sd">            had the same hash.</span>
+
+<span class="sd">            If async_init was True, user should wait for the dataset to be finalized before using it.</span>
+<span class="sd">            This status of the dataset can be checked by calling `self.get_dataset()` with the returned dataset ID.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">res</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">hash_dataset_columns</span><span class="p">(</span><span class="n">dataset_id</span><span class="p">,</span> <span class="n">hash_column_names</span><span class="p">,</span> <span class="n">new_dataset_name</span><span class="p">,</span> <span class="n">async_init</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">converter</span><span class="o">.</span><span class="n">list_datasets</span><span class="p">(</span><span class="n">res</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="CiphermodeApi.waterfall_gather">
+<a class="viewcode-back" href="../../index.html#lib.api.CiphermodeApi.waterfall_gather">[docs]</a>
+    <span class="k">def</span> <span class="nf">waterfall_gather</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">original_dataset_id</span><span class="p">,</span> <span class="n">stage_session_ids</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">credentials</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Post-processes the results of multiple PSI computations on hashed datasets output by `hash_dataset_columns`</span>
+<span class="sd">        to obtain the indices of rows in the original dataset that matched, along with the index of the first computation they </span>
+<span class="sd">        matched in.</span>
+
+<span class="sd">        Used to implement a multi-stage &quot;waterfall&quot; join by providing ordered session IDs for each stage.</span>
+<span class="sd">        Can also be called with a single stage to obtain the row indices that matched for a single PSI computation.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            original_dataset_id (str): The original dataset ID.</span>
+<span class="sd">            stage_session_ids (list[str]): Waterfall session IDs. Each should correspond to a PSI computation (made by `create_psi`) on hashed datasets (made with `hash_dataset_columns`). Should be non-empty.</span>
+<span class="sd">            endpoint (str): The endpoint to which the computation session result will be uploaded.</span>
+<span class="sd">            credentials (dict): The credentials to use for the cloud upload. See details in docs for `upload_computation_session_result()`.</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            If `endpoint` is empty, returns the result directly, encoded as bytes.</span>
+<span class="sd">            Otherwise, returns a string that can be input to self.get_cloud_upload() </span>
+<span class="sd">            to check the progress of uploading the result to the cloud.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">resp</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">stub</span><span class="o">.</span><span class="n">waterfall_gather</span><span class="p">(</span><span class="n">original_dataset_id</span><span class="p">,</span> <span class="n">stage_session_ids</span><span class="p">,</span> <span class="n">endpoint</span><span class="p">,</span> <span class="n">credentials</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">endpoint</span> <span class="o">==</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">payload</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">resp</span><span class="o">.</span><span class="n">cloud_upload_id</span></div>
+</div>
+
+
+<div class="viewcode-block" id="create_client">
+<a class="viewcode-back" href="../../index.html#lib.api.create_client">[docs]</a>
+<span class="k">def</span> <span class="nf">create_client</span><span class="p">(</span><span class="n">frontend_address</span><span class="p">,</span>
+                  <span class="n">auth_config</span><span class="o">=</span><span class="s1">&#39;~/.ciphercore/auth_config&#39;</span><span class="p">,</span>
+                  <span class="n">token_path</span><span class="o">=</span><span class="s1">&#39;~/.ciphercore/token&#39;</span><span class="p">,</span>
+                  <span class="n">custom_root_ca</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">tls_domain</span><span class="o">=</span><span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+                  <span class="n">private_key</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="n">certificate_chain</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                  <span class="o">*</span><span class="n">args</span><span class="p">,</span>
+                  <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;  </span>
+<span class="sd">    Create a CiphermodeApi instance and intialize it.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        frontend_address (str): The address of the server.</span>
+<span class="sd">        auth_config (str, optional): Path to auth config.</span>
+<span class="sd">        token_path (str, optional): Path to file containing OpenIDConnect token.</span>
+<span class="sd">        custom_root_ca (str, optional): Path to a TLS certificate file.</span>
+<span class="sd">        tls_domain (str, optional): The domain protected by the TLS certificate.</span>
+<span class="sd">        private_key (str, optional): Path to the client&#39;s private key.</span>
+<span class="sd">        certificate_chain (str, optional): Path to the client&#39;s certificate chain.</span>
+<span class="sd">        *args: Arguments for the PandasConverter.</span>
+<span class="sd">        **kwargs: Kwargs for the PandasConverter.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        CiphermodeApi: An instance of the CiphermodeApi.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">frontend_address</span> <span class="o">=</span> <span class="n">normalize_address</span><span class="p">(</span><span class="n">frontend_address</span><span class="p">)</span>
+    <span class="n">cert</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">custom_root_ca</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span>
+        <span class="n">custom_root_ca</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">private_key</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">private_key</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span>
+        <span class="n">private_key</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">certificate_chain</span> <span class="o">=</span> <span class="kc">None</span> <span class="k">if</span> <span class="n">certificate_chain</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="nb">open</span><span class="p">(</span>
+        <span class="n">certificate_chain</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="n">auth_handler</span> <span class="o">=</span> <span class="n">AuthHandler</span><span class="p">(</span>
+        <span class="n">frontend_address</span><span class="p">,</span> <span class="n">auth_config</span><span class="p">,</span> <span class="n">token_path</span><span class="p">,</span> <span class="n">cert</span><span class="p">,</span> <span class="n">tls_domain</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">CiphermodeApi</span><span class="p">(</span><span class="n">frontend_address</span><span class="p">,</span> <span class="n">auth_handler</span><span class="p">,</span> <span class="n">cert</span><span class="o">=</span><span class="n">cert</span><span class="p">,</span> <span class="n">tls_domain</span><span class="o">=</span><span class="n">tls_domain</span><span class="p">,</span> <span class="n">private_key</span><span class="o">=</span><span class="n">private_key</span><span class="p">,</span> <span class="n">certificate_chain</span><span class="o">=</span><span class="n">certificate_chain</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></div>
+
+</pre></div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pyte
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Pyte.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
