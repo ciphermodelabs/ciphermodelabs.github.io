@@ -1,0 +1,1763 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to CiphermodeClient’s documentation! &#8212; CiphermodeClient  documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=1b90ffb1" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">CiphermodeClient  documentation</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/index.rst" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.rst</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Welcome to CiphermodeClient’s documentation!</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Welcome to CiphermodeClient’s documentation!</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.create_client"><code class="docutils literal notranslate"><span class="pre">create_client()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi"><code class="docutils literal notranslate"><span class="pre">CiphermodeApi</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.add_user_role"><code class="docutils literal notranslate"><span class="pre">add_user_role()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.approve_data_request"><code class="docutils literal notranslate"><span class="pre">approve_data_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.build_info"><code class="docutils literal notranslate"><span class="pre">build_info()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.cancel_computation_session"><code class="docutils literal notranslate"><span class="pre">cancel_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.comment_data_request"><code class="docutils literal notranslate"><span class="pre">comment_data_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_computation"><code class="docutils literal notranslate"><span class="pre">create_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_computation_session"><code class="docutils literal notranslate"><span class="pre">create_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_explore_dataset_intersection"><code class="docutils literal notranslate"><span class="pre">create_explore_dataset_intersection()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_knn"><code class="docutils literal notranslate"><span class="pre">create_knn()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_llm_inference"><code class="docutils literal notranslate"><span class="pre">create_llm_inference()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_mlp"><code class="docutils literal notranslate"><span class="pre">create_mlp()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_nn_inference"><code class="docutils literal notranslate"><span class="pre">create_nn_inference()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_psi"><code class="docutils literal notranslate"><span class="pre">create_psi()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_single_graph_computation"><code class="docutils literal notranslate"><span class="pre">create_single_graph_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_sql"><code class="docutils literal notranslate"><span class="pre">create_sql()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.delete_dataset"><code class="docutils literal notranslate"><span class="pre">delete_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.download_computation_session_result"><code class="docutils literal notranslate"><span class="pre">download_computation_session_result()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.download_graph"><code class="docutils literal notranslate"><span class="pre">download_graph()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_cloud_upload"><code class="docutils literal notranslate"><span class="pre">get_cloud_upload()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_dataset"><code class="docutils literal notranslate"><span class="pre">get_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_knn_computation"><code class="docutils literal notranslate"><span class="pre">get_knn_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_llm_inference_computation"><code class="docutils literal notranslate"><span class="pre">get_llm_inference_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_mlp_computation"><code class="docutils literal notranslate"><span class="pre">get_mlp_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_nn_inference_computation"><code class="docutils literal notranslate"><span class="pre">get_nn_inference_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_psi_computation"><code class="docutils literal notranslate"><span class="pre">get_psi_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_report"><code class="docutils literal notranslate"><span class="pre">get_report()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_sql_computation"><code class="docutils literal notranslate"><span class="pre">get_sql_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.hash_dataset_columns"><code class="docutils literal notranslate"><span class="pre">hash_dataset_columns()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_cloud_uploads"><code class="docutils literal notranslate"><span class="pre">list_cloud_uploads()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computation_sessions"><code class="docutils literal notranslate"><span class="pre">list_computation_sessions()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computation_sessions_ids"><code class="docutils literal notranslate"><span class="pre">list_computation_sessions_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computations"><code class="docutils literal notranslate"><span class="pre">list_computations()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computations_ids"><code class="docutils literal notranslate"><span class="pre">list_computations_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_data_requests"><code class="docutils literal notranslate"><span class="pre">list_data_requests()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_data_requests_ids"><code class="docutils literal notranslate"><span class="pre">list_data_requests_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_datasets"><code class="docutils literal notranslate"><span class="pre">list_datasets()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_datasets_ids"><code class="docutils literal notranslate"><span class="pre">list_datasets_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_graphs"><code class="docutils literal notranslate"><span class="pre">list_graphs()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_graphs_ids"><code class="docutils literal notranslate"><span class="pre">list_graphs_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_groups"><code class="docutils literal notranslate"><span class="pre">list_groups()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_groups_ids"><code class="docutils literal notranslate"><span class="pre">list_groups_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_node_events"><code class="docutils literal notranslate"><span class="pre">list_node_events()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_user_events"><code class="docutils literal notranslate"><span class="pre">list_user_events()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_users"><code class="docutils literal notranslate"><span class="pre">list_users()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_users_ids"><code class="docutils literal notranslate"><span class="pre">list_users_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.local_node_connections"><code class="docutils literal notranslate"><span class="pre">local_node_connections()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.node_connections"><code class="docutils literal notranslate"><span class="pre">node_connections()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.poll_explore_dataset_intersection"><code class="docutils literal notranslate"><span class="pre">poll_explore_dataset_intersection()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.publish_dataset"><code class="docutils literal notranslate"><span class="pre">publish_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.reject_data_request"><code class="docutils literal notranslate"><span class="pre">reject_data_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.remove_user_role"><code class="docutils literal notranslate"><span class="pre">remove_user_role()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.run_gc"><code class="docutils literal notranslate"><span class="pre">run_gc()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.save_computation_session_result"><code class="docutils literal notranslate"><span class="pre">save_computation_session_result()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.show_dataset"><code class="docutils literal notranslate"><span class="pre">show_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.start_computation_session"><code class="docutils literal notranslate"><span class="pre">start_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.tag_computation_session"><code class="docutils literal notranslate"><span class="pre">tag_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_and_publish_dataset"><code class="docutils literal notranslate"><span class="pre">upload_and_publish_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_computation_session_result"><code class="docutils literal notranslate"><span class="pre">upload_computation_session_result()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_dataset"><code class="docutils literal notranslate"><span class="pre">upload_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_graph"><code class="docutils literal notranslate"><span class="pre">upload_graph()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.waterfall_gather"><code class="docutils literal notranslate"><span class="pre">waterfall_gather()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="welcome-to-ciphermodeclient-s-documentation">
+<h1>Welcome to CiphermodeClient’s documentation!<a class="headerlink" href="#welcome-to-ciphermodeclient-s-documentation" title="Link to this heading">#</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="lib.api.create_client">
+<span class="sig-name descname"><span class="pre">create_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frontend_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'~/.ciphercore/auth_config'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'~/.ciphercore/token'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">custom_root_ca</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tls_domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'localhost'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">private_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificate_chain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#create_client"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.create_client" title="Link to this definition">#</a></dt>
+<dd><p>Create a CiphermodeApi instance and intialize it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frontend_address</strong> (<em>str</em>) – The address of the server.</p></li>
+<li><p><strong>auth_config</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to auth config.</p></li>
+<li><p><strong>token_path</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to file containing OpenIDConnect token.</p></li>
+<li><p><strong>custom_root_ca</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to a TLS certificate file.</p></li>
+<li><p><strong>tls_domain</strong> (<em>str</em><em>, </em><em>optional</em>) – The domain protected by the TLS certificate.</p></li>
+<li><p><strong>private_key</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to the client’s private key.</p></li>
+<li><p><strong>certificate_chain</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to the client’s certificate chain.</p></li>
+<li><p><strong>*args</strong> – Arguments for the PandasConverter.</p></li>
+<li><p><strong>**kwargs</strong> – Kwargs for the PandasConverter.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>An instance of the CiphermodeApi.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#lib.api.CiphermodeApi" title="lib.api.CiphermodeApi">CiphermodeApi</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">CiphermodeApi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth_handler</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cert</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tls_domain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">private_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">certificate_chain</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.add_user_role">
+<span class="sig-name descname"><span class="pre">add_user_role</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.add_user_role"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.add_user_role" title="Link to this definition">#</a></dt>
+<dd><p>Add a role to a user. Valid roles are:
+- ‘data_owner’: [SMPC] The user can upload datasets and approve computations using them.
+- ‘analyst’: [SMPC] The user can create computations.
+- ‘admin’: [SMPC] The user can perform all actions of ‘data_owner’ and ‘analyst’, and can modify acls and user roles.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>str</em>) – The ID of the user.</p></li>
+<li><p><strong>role</strong> (<em>str</em>) – The role to be added to the user.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the updated user information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.approve_data_request">
+<span class="sig-name descname"><span class="pre">approve_data_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.approve_data_request"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.approve_data_request" title="Link to this definition">#</a></dt>
+<dd><p>Approves a data request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the data request to approve.</p></li>
+<li><p><strong>comment</strong> (<em>str</em><em>, </em><em>optional</em>) – A comment to attach to the data request.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the approved data request.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.build_info">
+<span class="sig-name descname"><span class="pre">build_info</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.build_info"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.build_info" title="Link to this definition">#</a></dt>
+<dd><p>Get the build information.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>An object containing the build information.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.cancel_computation_session">
+<span class="sig-name descname"><span class="pre">cancel_computation_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.cancel_computation_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.cancel_computation_session" title="Link to this definition">#</a></dt>
+<dd><p>Cancel a specific computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – The ID of the computation session to cancel.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the cancelled computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.comment_data_request">
+<span class="sig-name descname"><span class="pre">comment_data_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.comment_data_request"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.comment_data_request" title="Link to this definition">#</a></dt>
+<dd><p>Comments on a data request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the data request to comment on.</p></li>
+<li><p><strong>comment</strong> (<em>str</em>) – The comment to attach to the data request.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the commented data request.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_computation">
+<span class="sig-name descname"><span class="pre">create_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">orchestrator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">graphs_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create a computation.</p>
+<p>Computation object specifies what computation to execute, regardless of the data. The same computation
+can be used multiple times with different datasets.
+Note that there are easier-to-use functions for specific computations (PSI, SQL, NN training, etc.).
+We strongly recommend using those functions when possible.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>orchestrator</strong> (<em>str</em>) – The orchestrator type for the computation.</p></li>
+<li><p><strong>graphs_config</strong> (<em>dict</em>) – The “graph name -&gt; graph ID” mapping.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name of the computation.</p></li>
+<li><p><strong>description</strong> (<em>str</em>) – The description of the computation.</p></li>
+<li><p><strong>config</strong> (<em>dict</em><em>, </em><em>optional</em>) – Additional orchestrator-specific configuration for the computation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation information.
+The ‘id’ field of this DataFrame is the ID of the created computation,
+which is used to refer to this computation in other operations.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_computation_session">
+<span class="sig-name descname"><span class="pre">create_computation_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">computation_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_computation_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_computation_session" title="Link to this definition">#</a></dt>
+<dd><p>Create a computation session. A computation session is an instantiation of a computation on specific datasets,
+specified by the data_config argument.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>computation_id</strong> (<em>str</em>) – The ID of the computation.</p></li>
+<li><p><strong>data_config</strong> (<em>dict</em>) – The mapping (name -&gt; dataset ID). Names are orchestrator-specific (see orchestrator-specific functions for details, e.g. <cite>create_psi</cite>).</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas Series containing the created computation session information.
+The ‘id’ in this Series is the ID of the created computation session,
+which is used to refer to this session in other operations.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_explore_dataset_intersection">
+<span class="sig-name descname"><span class="pre">create_explore_dataset_intersection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dataset_id2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_names1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_names2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_approx_match_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_explore_dataset_intersection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_explore_dataset_intersection" title="Link to this definition">#</a></dt>
+<dd><p>Creates an exploration of the intersection between two datasets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset_id1</strong> (<em>str</em>) – The ID of the first dataset.</p></li>
+<li><p><strong>dataset_id2</strong> (<em>str</em>) – The ID of the second dataset.</p></li>
+<li><p><strong>column_names1</strong> (<em>list</em><em>(</em><em>str</em><em>)</em>) – Names of the columns in the first dataset to compare.</p></li>
+<li><p><strong>column_names2</strong> (<em>list</em><em>(</em><em>str</em><em>)</em>) – Names of the columns in the second dataset to compare.</p></li>
+<li><p><strong>use_approx_match_rate</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to use approximate match rate. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>computation_session_id</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_knn">
+<span class="sig-name descname"><span class="pre">create_knn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">query_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_neighbors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_dataset_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_knn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_knn" title="Link to this definition">#</a></dt>
+<dd><p>Create a KNN (k-Nearest-Neighbors) computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key_dataset_id</strong> (<em>str</em>) – The ID of the rowwise dataset with lookup keys (vectors).</p></li>
+<li><p><strong>query_dataset_id</strong> (<em>str</em>) – The ID of the rowwise dataset with lookup queries (vectors).</p></li>
+<li><p><strong>num_neighbors</strong> (<em>int</em>) – The number of neighbors to consider in the KNN computation.</p></li>
+<li><p><strong>value_dataset_id</strong> (<em>str</em><em>, </em><em>optional</em>) – The ID of the dataset with labels. Default is None.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_llm_inference">
+<span class="sig-name descname"><span class="pre">create_llm_inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inference_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">128</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_dim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">512</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_heads</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.85</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top_p</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.85</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_llm_inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_llm_inference" title="Link to this definition">#</a></dt>
+<dd><p>Create a LLM inference computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inference_dataset_id</strong> (<em>str</em>) – The ID of the inference dataset.</p></li>
+<li><p><strong>model_dataset_id</strong> (<em>str</em>) – The ID of the model dataset.</p></li>
+<li><p><strong>max_len</strong> (<em>int</em><em>, </em><em>optional</em>) – The maximum length of the generated sequence.</p></li>
+<li><p><strong>num_layers</strong> (<em>int</em><em>, </em><em>optional</em>) – The number of layers in the model.</p></li>
+<li><p><strong>embedding_dim</strong> (<em>int</em><em>, </em><em>optional</em>) – The embedding dimension of the model.</p></li>
+<li><p><strong>num_heads</strong> (<em>int</em><em>, </em><em>optional</em>) – The number of attention heads in the model.</p></li>
+<li><p><strong>temperature</strong> (<em>float</em><em>, </em><em>optional</em>) – The temperature for sampling.</p></li>
+<li><p><strong>top_p</strong> (<em>float</em><em>, </em><em>optional</em>) – The top-p heuristic value for sampling.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_mlp">
+<span class="sig-name descname"><span class="pre">create_mlp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validation_datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_datasets</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_dataset</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">layers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[100,</span> <span class="pre">1]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'adam'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0003</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'log_loss'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epochs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_mlp"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_mlp" title="Link to this definition">#</a></dt>
+<dd><p>Create an MLP (Multi-Layer Perceptron) training computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>train_datasets</strong> (<em>list</em>) – The list of training dataset IDs.</p></li>
+<li><p><strong>validation_datasets</strong> (<em>list</em>) – The list of validation dataset IDs.</p></li>
+<li><p><strong>test_datasets</strong> (<em>list</em>) – The list of testing dataset IDs.</p></li>
+<li><p><strong>layers</strong> (<em>list</em><em>, </em><em>optional</em>) – List of hidden layer sizes in the MLP (in most cases, the last one should be 1). Default is [100, 1].</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>optional</em>) – Batch size for training. Default is 64.</p></li>
+<li><p><strong>optimizer</strong> (<em>str</em><em>, </em><em>optional</em>) – Optimizer to use for training. Default is ‘adam’, supported optimizers are ‘adam’, ‘adagrad’, ‘sgd’.</p></li>
+<li><p><strong>learning_rate</strong> (<em>float</em><em>, </em><em>optional</em>) – Learning rate for training. Default is 3e-4.</p></li>
+<li><p><strong>loss</strong> (<em>str</em><em>, </em><em>optional</em>) – Loss function to use for training. Default is ‘log_loss’, supported losses are ‘log_loss’ and ‘mse’.</p></li>
+<li><p><strong>epochs</strong> (<em>int</em><em>, </em><em>optional</em>) – Number of epochs for training. Default is 3.</p></li>
+<li><p><strong>precision</strong> (<em>int</em><em>, </em><em>optional</em>) – Precision for training. Default is 15. Training is performed in fixed-point arithmetic with denominator <cite>2**precision</cite>.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_nn_inference">
+<span class="sig-name descname"><span class="pre">create_nn_inference</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inference_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_nn_inference"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_nn_inference" title="Link to this definition">#</a></dt>
+<dd><p>Create a neural network inference computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inference_dataset_id</strong> (<em>str</em>) – The ID of the inference dataset.</p></li>
+<li><p><strong>model_dataset_id</strong> (<em>str</em>) – The ID of the model dataset.</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em><em>, </em><em>optional</em>) – The batch size for inference. Default is 64, should be the same as for training.</p></li>
+<li><p><strong>precision</strong> (<em>int</em><em>, </em><em>optional</em>) – The precision for inference. Default is 15, should be the same as for training.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_psi">
+<span class="sig-name descname"><span class="pre">create_psi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">first_dataset_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second_dataset_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_psi"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_psi" title="Link to this definition">#</a></dt>
+<dd><p>Create a PSI (Private Set Intersection) computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>first_dataset_id</strong> (<em>str</em>) – The ID of the first dataset.</p></li>
+<li><p><strong>second_dataset_id</strong> (<em>str</em>) – The ID of the second dataset.</p></li>
+<li><p><strong>first_dataset_columns</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – The column from the first dataset to join.</p></li>
+<li><p><strong>second_dataset_columns</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – The column from the second dataset to join.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+<li><p><strong>sharded</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to shard the computation. Default is True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas Series containing the created computation session information.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_single_graph_computation">
+<span class="sig-name descname"><span class="pre">create_single_graph_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serialized_graph</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_single_graph_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_single_graph_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create a single graph computation. These computations are usually used for testing or basic examples,
+e.g. computing the sum of two numbers with SMPC.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>serialized_graph</strong> (<em>str</em>) – The serialized Ciphercore graph to create a computation for.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the computation.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the computation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.create_sql">
+<span class="sig-name descname"><span class="pre">create_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.create_sql"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.create_sql" title="Link to this definition">#</a></dt>
+<dd><p>Create an SQL computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>query</strong> (<em>str</em>) – The SQL query to execute. The query should refer to columns with lowercase names.</p></li>
+<li><p><strong>data_config</strong> (<em>dict</em>) – The mapping (table name -&gt; dataset ID). SQL queries refer to datasets by the table names in this mapping.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the session.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description of the session.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the created computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.delete_dataset">
+<span class="sig-name descname"><span class="pre">delete_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.delete_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.delete_dataset" title="Link to this definition">#</a></dt>
+<dd><p>Delete dataset with the specified ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dataset_id</strong> (<em>str</em>) – The ID of the dataset.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if dataset was successfully deleted.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.download_computation_session_result">
+<span class="sig-name descname"><span class="pre">download_computation_session_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">onnx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.download_computation_session_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.download_computation_session_result" title="Link to this definition">#</a></dt>
+<dd><p>Download the result of a specific computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the computation session to download.</p></li>
+<li><p><strong>onnx</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to convert the result to ONNX protobuf. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the downloaded computation session result.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>CiphermodeException</strong> – if more than one of csv, onnx and float_array is set.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.download_graph">
+<span class="sig-name descname"><span class="pre">download_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.download_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.download_graph" title="Link to this definition">#</a></dt>
+<dd><p>Download a graph with the specified ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – The ID of the graph.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The serialized Ciphercore graph.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_cloud_upload">
+<span class="sig-name descname"><span class="pre">get_cloud_upload</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_cloud_upload"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_cloud_upload" title="Link to this definition">#</a></dt>
+<dd><p>Get cloud upload with the specified ID. Used to track the progress of uploading a particular computation
+session result to cloud storage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the cloud upload information.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_dataset">
+<span class="sig-name descname"><span class="pre">get_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_dataset" title="Link to this definition">#</a></dt>
+<dd><p>Get information about the dataset with the specified ID.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dataset_id</strong> (<em>str</em>) – The ID of the dataset.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Metadata about the dataset with the specified ID, e.g. name, description, visibility, permissions.
+Does not return metadata about the data itself.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Dataset</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_knn_computation">
+<span class="sig-name descname"><span class="pre">get_knn_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_neighbors</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">has_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_knn_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_knn_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create a KNN (k-nearest-neighbors) computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_neighbors</strong> (<em>int</em>) – The number of neighbors to consider in the KNN computation.</p></li>
+<li><p><strong>has_labels</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether the input data has labels. Default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ID of the created computation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_llm_inference_computation">
+<span class="sig-name descname"><span class="pre">get_llm_inference_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_len</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">embedding_dim</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_heads</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">top_p</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_llm_inference_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_llm_inference_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create a LLM inference computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>max_len</strong> (<em>int</em>) – The maximum length of the generated text.</p></li>
+<li><p><strong>num_layers</strong> (<em>int</em>) – The number of layers in the transformer.</p></li>
+<li><p><strong>embedding_dim</strong> (<em>int</em>) – The embedding dimension of the transformer.</p></li>
+<li><p><strong>num_heads</strong> (<em>int</em>) – The number of heads in the transformer.</p></li>
+<li><p><strong>temperature</strong> (<em>float</em>) – The temperature for the sampling.</p></li>
+<li><p><strong>top_p</strong> (<em>float</em>) – The top p for the sampling.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ID of the created computation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_mlp_computation">
+<span class="sig-name descname"><span class="pre">get_mlp_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">layers</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">optimizer</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">learning_rate</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">loss</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epochs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_mlp_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_mlp_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create an MLP (Multi-Layer Perceptron) computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>layers</strong> (<em>list</em>) – The list with the sizes of hidden layers in the MLP (note that the last one should be 1 in most cases).</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em>) – The batch size for training.</p></li>
+<li><p><strong>optimizer</strong> (<em>str</em>) – The optimizer to use for training (we currently support ‘adam’, ‘adagrad’ and ‘sgd’).</p></li>
+<li><p><strong>learning_rate</strong> (<em>float</em>) – The learning rate for training.</p></li>
+<li><p><strong>loss</strong> (<em>str</em>) – The loss function to use for training (we currently support ‘log_loss’ and ‘mse’).</p></li>
+<li><p><strong>epochs</strong> (<em>int</em>) – The number of epochs for training.</p></li>
+<li><p><strong>precision</strong> (<em>int</em>) – The precision for training (it is conducted with fixed precision numbers, with <cite>2**precision</cite> as denominator).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ID of the created computation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_nn_inference_computation">
+<span class="sig-name descname"><span class="pre">get_nn_inference_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">batch_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">precision</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_nn_inference_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_nn_inference_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create a neural network inference computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>batch_size</strong> (<em>int</em>) – The batch size for inference, should be the same as for training.</p></li>
+<li><p><strong>precision</strong> (<em>int</em>) – The precision for inference, should be the same as for training.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ID of the created computation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_psi_computation">
+<span class="sig-name descname"><span class="pre">get_psi_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">first_dataset_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">second_dataset_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sharded</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_psi_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_psi_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create a PSI (Private Set Intersection) computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>first_dataset_columns</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – The list of columns from the first dataset to join.</p></li>
+<li><p><strong>second_dataset_columns</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – The list of columns from the second dataset to join.</p></li>
+<li><p><strong>sharded</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to shard the computation. This is useful for reducing</p></li>
+<li><p><strong>True.</strong> (<em>the memory usage</em><em> of </em><em>a computation on large datasets. Default is</em>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ID of the created computation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_report">
+<span class="sig-name descname"><span class="pre">get_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_report"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_report" title="Link to this definition">#</a></dt>
+<dd><p>Get the report of the specified dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dataset_id</strong> (<em>str</em>) – The ID of the dataset.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The report of the specified dataset.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Report (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.get_sql_computation">
+<span class="sig-name descname"><span class="pre">get_sql_computation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">query</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.get_sql_computation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.get_sql_computation" title="Link to this definition">#</a></dt>
+<dd><p>Create an SQL computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>query</strong> (<em>str</em>) – The SQL query to execute. It can refer to tables by names, these names need to be specified in the corresponding computation session.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The ID of the created computation.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.hash_dataset_columns">
+<span class="sig-name descname"><span class="pre">hash_dataset_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hash_column_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_dataset_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.hash_dataset_columns"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.hash_dataset_columns" title="Link to this definition">#</a></dt>
+<dd><p>Hashes entries of dataset with given column names to create a succinct representation of the input dataset.</p>
+<p>Succinct representations output by this method can be matched with <cite>create_psi</cite> to get hash values
+they have in common.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dataset_id</strong> (<em>str</em>) – The dataset ID.</p></li>
+<li><p><strong>hash_column_names</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Columns from the dataset to hash.</p></li>
+<li><p><strong>new_dataset_name</strong> (<em>str</em>) – New dataset name.</p></li>
+<li><p><strong>async_init</strong> (<em>bool</em><em>, </em><em>optional</em>) – If true, function returns immediately after creating new dataset object and populates it with hashes asynchronously.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>A pandas Series containing the dataset ID for the succinct representation.</p>
+<p>This dataset contains a single column of (de-duplicated) hash values, each value corresponding to
+some set of rows in the input dataset where entries indexed by columns in <cite>hash_column_names</cite>
+had the same hash.</p>
+<p>If async_init was True, user should wait for the dataset to be finalized before using it.
+This status of the dataset can be checked by calling <cite>self.get_dataset()</cite> with the returned dataset ID.</p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_cloud_uploads">
+<span class="sig-name descname"><span class="pre">list_cloud_uploads</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_cloud_uploads"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_cloud_uploads" title="Link to this definition">#</a></dt>
+<dd><p>List all cloud uploads.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the list of cloud uploads.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_computation_sessions">
+<span class="sig-name descname"><span class="pre">list_computation_sessions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter_computation_session_ids</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">show_tags</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_computation_sessions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_computation_sessions" title="Link to this definition">#</a></dt>
+<dd><p>List computation sessions.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filter_computation_session_ids</strong> (<em>list</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – List of specific computation session IDs to return.
+If None, all computation sessions are returned. Default is None.</p></li>
+<li><p><strong>show_tags</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to include the tags column.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the list of computation sessions.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_computation_sessions_ids">
+<span class="sig-name descname"><span class="pre">list_computation_sessions_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_computation_sessions_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_computation_sessions_ids" title="Link to this definition">#</a></dt>
+<dd><p>List computation session IDs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of computation session IDs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_computations">
+<span class="sig-name descname"><span class="pre">list_computations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_computations"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_computations" title="Link to this definition">#</a></dt>
+<dd><p>List all computations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the list of computations.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_computations_ids">
+<span class="sig-name descname"><span class="pre">list_computations_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_computations_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_computations_ids" title="Link to this definition">#</a></dt>
+<dd><p>List the IDs of all computations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of computation IDs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_data_requests">
+<span class="sig-name descname"><span class="pre">list_data_requests</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter_computation_session_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_can_approve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_data_requests"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_data_requests" title="Link to this definition">#</a></dt>
+<dd><p>Lists data requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filter_computation_session_id</strong> (<em>str</em><em>, </em><em>optional</em>) – If provided, only data requests for this computation session ID will be returned.</p></li>
+<li><p><strong>filter_can_approve</strong> (<em>bool</em>) – If true, only data requests that the user can approve will be returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the list of data requests.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_data_requests_ids">
+<span class="sig-name descname"><span class="pre">list_data_requests_ids</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filter_computation_session_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_can_approve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_data_requests_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_data_requests_ids" title="Link to this definition">#</a></dt>
+<dd><p>Lists the IDs of data requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filter_computation_session_id</strong> (<em>str</em><em>, </em><em>optional</em>) – If provided, only data requests for this computation session ID will be returned.</p></li>
+<li><p><strong>filter_can_approve</strong> (<em>bool</em>) – If true, only data requests that the user can approve will be returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A list of data request IDs.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_datasets">
+<span class="sig-name descname"><span class="pre">list_datasets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_datasets"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_datasets" title="Link to this definition">#</a></dt>
+<dd><p>List all datasets. For each dataset, lists metadata about the dataset object, but not about the data itself.
+e.g. the name, description, visibility, and permissions of the dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the list of datasets.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_datasets_ids">
+<span class="sig-name descname"><span class="pre">list_datasets_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_datasets_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_datasets_ids" title="Link to this definition">#</a></dt>
+<dd><p>List the IDs of all datasets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of dataset IDs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_graphs">
+<span class="sig-name descname"><span class="pre">list_graphs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_graphs"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_graphs" title="Link to this definition">#</a></dt>
+<dd><p>List all Ciphercore graphs currently uploaded.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the list of graphs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_graphs_ids">
+<span class="sig-name descname"><span class="pre">list_graphs_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_graphs_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_graphs_ids" title="Link to this definition">#</a></dt>
+<dd><p>List the IDs of all graphs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of graph IDs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_groups">
+<span class="sig-name descname"><span class="pre">list_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_groups"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_groups" title="Link to this definition">#</a></dt>
+<dd><p>List all groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the list of groups.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_groups_ids">
+<span class="sig-name descname"><span class="pre">list_groups_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_groups_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_groups_ids" title="Link to this definition">#</a></dt>
+<dd><p>List the IDs of all groups.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of group IDs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_node_events">
+<span class="sig-name descname"><span class="pre">list_node_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp_ms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_events</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_node_events"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_node_events" title="Link to this definition">#</a></dt>
+<dd><p>Lists node audit events up to a given timestamp. Admin only.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timestamp_ms</strong> (<em>int</em>) – Timestamp, in milliseconds.</p></li>
+<li><p><strong>num_events</strong> (<em>int</em>) – Number of events to fetch.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing node audit events.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_user_events">
+<span class="sig-name descname"><span class="pre">list_user_events</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">timestamp_ms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_events</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_user_events"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_user_events" title="Link to this definition">#</a></dt>
+<dd><p>Lists user audit events up to a given timestamp. Admin only.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timestamp_ms</strong> (<em>int</em>) – Timestamp, in milliseconds.</p></li>
+<li><p><strong>num_events</strong> (<em>int</em>) – Number of events to fetch.</p></li>
+<li><p><strong>user</strong> (<em>str</em><em>, </em><em>optional</em>) – Email address to filter events on.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing user audit events.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_users">
+<span class="sig-name descname"><span class="pre">list_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_users"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_users" title="Link to this definition">#</a></dt>
+<dd><p>List all users.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the list of users.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.list_users_ids">
+<span class="sig-name descname"><span class="pre">list_users_ids</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.list_users_ids"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.list_users_ids" title="Link to this definition">#</a></dt>
+<dd><p>List the IDs of all users.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A list of user IDs.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.local_node_connections">
+<span class="sig-name descname"><span class="pre">local_node_connections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.local_node_connections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.local_node_connections" title="Link to this definition">#</a></dt>
+<dd><p>Get local node connections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Local node connections.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.node_connections">
+<span class="sig-name descname"><span class="pre">node_connections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.node_connections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.node_connections" title="Link to this definition">#</a></dt>
+<dd><p>Get node connections.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the node connections.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.poll_explore_dataset_intersection">
+<span class="sig-name descname"><span class="pre">poll_explore_dataset_intersection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.poll_explore_dataset_intersection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.poll_explore_dataset_intersection" title="Link to this definition">#</a></dt>
+<dd><p>Polls the exploration of a dataset intersection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>session_id</strong> (<em>str</em>) – The session id associated with the dataset intersection exploration.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Object containing explore computation details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>ExploreDatasetIntersectionResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.publish_dataset">
+<span class="sig-name descname"><span class="pre">publish_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.publish_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.publish_dataset" title="Link to this definition">#</a></dt>
+<dd><p>Make the dataset visible for all organizations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – The ID of the dataset.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the published dataset.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.reject_data_request">
+<span class="sig-name descname"><span class="pre">reject_data_request</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.reject_data_request"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.reject_data_request" title="Link to this definition">#</a></dt>
+<dd><p>Rejects a data request.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the data request to reject.</p></li>
+<li><p><strong>comment</strong> (<em>str</em><em>, </em><em>optional</em>) – A comment to attach to the data request.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the rejected data request.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.remove_user_role">
+<span class="sig-name descname"><span class="pre">remove_user_role</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">user_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">role</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.remove_user_role"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.remove_user_role" title="Link to this definition">#</a></dt>
+<dd><p>Remove a role from a user.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>user_id</strong> (<em>str</em>) – The ID of the user.</p></li>
+<li><p><strong>role</strong> (<em>str</em>) – The role to be removed from the user.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the updated user information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.run_gc">
+<span class="sig-name descname"><span class="pre">run_gc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.run_gc"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.run_gc" title="Link to this definition">#</a></dt>
+<dd><p>Run garbage collection.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The number of collected values.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.save_computation_session_result">
+<span class="sig-name descname"><span class="pre">save_computation_session_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">as_csv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_summary</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sql_permissions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">publish</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.save_computation_session_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.save_computation_session_result" title="Link to this definition">#</a></dt>
+<dd><p>Saves the result of a computation session to a new dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the computation session.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name to assign to the dataset.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – The description to assign to the dataset.</p></li>
+<li><p><strong>as_csv</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to treat the computation result as a CSV-like table (results in a columnwise dataset).</p></li>
+<li><p><strong>include_summary</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to include a dataset summary for the newly created dataset.</p></li>
+<li><p><strong>sql_permissions</strong> (<em>str</em><em>, </em><em>optional</em>) – The SQL permissions to assign to the dataset.</p></li>
+<li><p><strong>publish</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to make dataset visible for all organizations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the new dataset.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.show_dataset">
+<span class="sig-name descname"><span class="pre">show_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataset_id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.show_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.show_dataset" title="Link to this definition">#</a></dt>
+<dd><p>Display metadata about the dataset with the specified ID.
+Returns metadata about the data stored in this object, e.g. the number of rows and columns,
+the type of data in the table, permissions, and the number of shards (if applicable).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dataset_id</strong> (<em>str</em>) – The ID of the dataset.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the dataset information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.start_computation_session">
+<span class="sig-name descname"><span class="pre">start_computation_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.start_computation_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.start_computation_session" title="Link to this definition">#</a></dt>
+<dd><p>Start a specific computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>id</strong> (<em>str</em>) – The ID of the computation session to start.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the started computation session information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.tag_computation_session">
+<span class="sig-name descname"><span class="pre">tag_computation_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">key</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.tag_computation_session"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.tag_computation_session" title="Link to this definition">#</a></dt>
+<dd><p>Tag computation session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the computation session to start.</p></li>
+<li><p><strong>key</strong> (<em>str</em>) – Tag key.</p></li>
+<li><p><strong>value</strong> (<em>str</em><em>, </em><em>optional</em>) – Tag value. If None, the tag with a given key is removed instead.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.upload_and_publish_dataset">
+<span class="sig-name descname"><span class="pre">upload_and_publish_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.upload_and_publish_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.upload_and_publish_dataset" title="Link to this definition">#</a></dt>
+<dd><p>Upload a dataset and than make it visible for all organizations.</p>
+<p>See <cite>upload_dataset</cite> for arguments.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A pandas DataFrame containing the uploaded and published dataset.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.upload_computation_session_result">
+<span class="sig-name descname"><span class="pre">upload_computation_session_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credentials</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.upload_computation_session_result"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.upload_computation_session_result" title="Link to this definition">#</a></dt>
+<dd><p>Uploads the result of a computation session to a specified endpoint.
+The endpoint should be a valid filename within a cloud storage bucket for a supported cloud provider (AWS, GCP, or Azure).</p>
+<p>Credentials is a dictionary that has the user’s cloud storage credentials.
+Possible keys are ‘aws_access_key_id’, ‘aws_secret_access_key’, and ‘aws_session_token’ for AWS credentials,</p>
+<blockquote>
+<div><p>‘gcp_access_key_id’, ‘gcp_secret_access_key’, and ‘gcp_session_token’ for GCP credentials,
+and ‘secret_key’ for Azure credentials. Credentials for multiple providers can be passed in at once.</p>
+</div></blockquote>
+<p>We will parse the cloud provider from the <cite>endpoint</cite>, then look in the <cite>credentials</cite> dictionary to find
+the relevant credentials for this cloud provider. Credentials can be left empty if the endpoint is public.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – The ID of the computation session.</p></li>
+<li><p><strong>endpoint</strong> (<em>str</em>) – The endpoint to which the computation session result will be uploaded.</p></li>
+<li><p><strong>credentials</strong> (<em>dict</em>) – The credentials to access the endpoint.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the new dataset.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.upload_dataset">
+<span class="sig-name descname"><span class="pre">upload_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'columnwise'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credentials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_permissions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'everything'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sql_permissions</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">include_report</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">publish</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">async_init</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_secure_test</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.upload_dataset"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.upload_dataset" title="Link to this definition">#</a></dt>
+<dd><p>Upload a dataset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – The name of the dataset.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – A description of the dataset.</p></li>
+<li><p><strong>type</strong> (<em>str</em><em>, </em><em>optional</em>) – The type of the dataset. Default is ‘columnwise’, available options are {‘typed_value’, ‘columnwise’, ‘rowwise’, ‘model’}.</p></li>
+<li><p><strong>endpoint</strong> (<em>str</em><em>, </em><em>optional</em>) – In case of non-local datasets (cloud storage, remote SQL server), the address of the dataset object.</p></li>
+<li><p><strong>credentials</strong> (<em>dict</em><em>, </em><em>optional</em>) – The credentials to access the dataset in cloud storage. See details in docs for <a href="#id1"><span class="problematic" id="id2">`</span></a>upload_computation_session_result()’.</p></li>
+<li><p><strong>data</strong> (<em>list</em><em>, </em><em>optional</em>) – In case of local datasets, the data to upload (CSV files for columnwise/rowwise types, binary data of an ONNX model, or TypedValue JSON otherwise).</p></li>
+<li><p><strong>column_permissions</strong> (<em>str</em><em>, </em><em>optional</em>) – The column permissions of the dataset. Default is ‘everything’. Avaliable options are {‘everything’, ‘everything_local’, None}.</p></li>
+<li><p><strong>sql_permissions</strong> (<em>str</em><em>, </em><em>optional</em>) – The SQL permissions of the dataset.</p></li>
+<li><p><strong>include_report</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to include a report in the upload.</p></li>
+<li><p><strong>publish</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to make dataset visible for all organizations.</p></li>
+<li><p><strong>async_init</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to download the dataset from the <cite>endpoint</cite> asynchronously.</p></li>
+<li><p><strong>allow_secure_test</strong> (<em>bool</em><em>, </em><em>optional</em>) – Whether to allow the dataset to be used in SecureTest computations.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><p>A pandas Series containing the uploaded dataset.</p>
+<p>The ‘id’ field in the return value is the ID of the uploaded dataset, which is used to refer
+to this dataset in computations and other operations.</p>
+<p>If async_init was True, user should wait for the dataset to be finalized before using it.
+This status of the dataset can be checked by calling <cite>self.get_dataset()</cite> with the returned dataset ID.</p>
+</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>CiphermodeException</strong> – If both endpoint and data are specified, or if permissions are given for a non-columnwise dataset.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.upload_graph">
+<span class="sig-name descname"><span class="pre">upload_graph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">serialized_graph</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.upload_graph"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.upload_graph" title="Link to this definition">#</a></dt>
+<dd><p>Upload a serialized graph.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>serialized_graph</strong> (<em>str</em>) – The serialized Ciphercore graph to upload.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A pandas DataFrame containing the uploaded graph information.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="lib.api.CiphermodeApi.waterfall_gather">
+<span class="sig-name descname"><span class="pre">waterfall_gather</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">original_dataset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stage_session_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">endpoint</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credentials</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/lib/api.html#CiphermodeApi.waterfall_gather"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#lib.api.CiphermodeApi.waterfall_gather" title="Link to this definition">#</a></dt>
+<dd><p>Post-processes the results of multiple PSI computations on hashed datasets output by <cite>hash_dataset_columns</cite>
+to obtain the indices of rows in the original dataset that matched, along with the index of the first computation they
+matched in.</p>
+<p>Used to implement a multi-stage “waterfall” join by providing ordered session IDs for each stage.
+Can also be called with a single stage to obtain the row indices that matched for a single PSI computation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>original_dataset_id</strong> (<em>str</em>) – The original dataset ID.</p></li>
+<li><p><strong>stage_session_ids</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Waterfall session IDs. Each should correspond to a PSI computation (made by <cite>create_psi</cite>) on hashed datasets (made with <cite>hash_dataset_columns</cite>). Should be non-empty.</p></li>
+<li><p><strong>endpoint</strong> (<em>str</em>) – The endpoint to which the computation session result will be uploaded.</p></li>
+<li><p><strong>credentials</strong> (<em>dict</em>) – The credentials to use for the cloud upload. See details in docs for <cite>upload_computation_session_result()</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>If <cite>endpoint</cite> is empty, returns the result directly, encoded as bytes.
+Otherwise, returns a string that can be input to self.get_cloud_upload()
+to check the progress of uploading the result to the cloud.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Welcome to CiphermodeClient’s documentation!</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.create_client"><code class="docutils literal notranslate"><span class="pre">create_client()</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi"><code class="docutils literal notranslate"><span class="pre">CiphermodeApi</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.add_user_role"><code class="docutils literal notranslate"><span class="pre">add_user_role()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.approve_data_request"><code class="docutils literal notranslate"><span class="pre">approve_data_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.build_info"><code class="docutils literal notranslate"><span class="pre">build_info()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.cancel_computation_session"><code class="docutils literal notranslate"><span class="pre">cancel_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.comment_data_request"><code class="docutils literal notranslate"><span class="pre">comment_data_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_computation"><code class="docutils literal notranslate"><span class="pre">create_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_computation_session"><code class="docutils literal notranslate"><span class="pre">create_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_explore_dataset_intersection"><code class="docutils literal notranslate"><span class="pre">create_explore_dataset_intersection()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_knn"><code class="docutils literal notranslate"><span class="pre">create_knn()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_llm_inference"><code class="docutils literal notranslate"><span class="pre">create_llm_inference()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_mlp"><code class="docutils literal notranslate"><span class="pre">create_mlp()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_nn_inference"><code class="docutils literal notranslate"><span class="pre">create_nn_inference()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_psi"><code class="docutils literal notranslate"><span class="pre">create_psi()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_single_graph_computation"><code class="docutils literal notranslate"><span class="pre">create_single_graph_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.create_sql"><code class="docutils literal notranslate"><span class="pre">create_sql()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.delete_dataset"><code class="docutils literal notranslate"><span class="pre">delete_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.download_computation_session_result"><code class="docutils literal notranslate"><span class="pre">download_computation_session_result()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.download_graph"><code class="docutils literal notranslate"><span class="pre">download_graph()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_cloud_upload"><code class="docutils literal notranslate"><span class="pre">get_cloud_upload()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_dataset"><code class="docutils literal notranslate"><span class="pre">get_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_knn_computation"><code class="docutils literal notranslate"><span class="pre">get_knn_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_llm_inference_computation"><code class="docutils literal notranslate"><span class="pre">get_llm_inference_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_mlp_computation"><code class="docutils literal notranslate"><span class="pre">get_mlp_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_nn_inference_computation"><code class="docutils literal notranslate"><span class="pre">get_nn_inference_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_psi_computation"><code class="docutils literal notranslate"><span class="pre">get_psi_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_report"><code class="docutils literal notranslate"><span class="pre">get_report()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.get_sql_computation"><code class="docutils literal notranslate"><span class="pre">get_sql_computation()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.hash_dataset_columns"><code class="docutils literal notranslate"><span class="pre">hash_dataset_columns()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_cloud_uploads"><code class="docutils literal notranslate"><span class="pre">list_cloud_uploads()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computation_sessions"><code class="docutils literal notranslate"><span class="pre">list_computation_sessions()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computation_sessions_ids"><code class="docutils literal notranslate"><span class="pre">list_computation_sessions_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computations"><code class="docutils literal notranslate"><span class="pre">list_computations()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_computations_ids"><code class="docutils literal notranslate"><span class="pre">list_computations_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_data_requests"><code class="docutils literal notranslate"><span class="pre">list_data_requests()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_data_requests_ids"><code class="docutils literal notranslate"><span class="pre">list_data_requests_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_datasets"><code class="docutils literal notranslate"><span class="pre">list_datasets()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_datasets_ids"><code class="docutils literal notranslate"><span class="pre">list_datasets_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_graphs"><code class="docutils literal notranslate"><span class="pre">list_graphs()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_graphs_ids"><code class="docutils literal notranslate"><span class="pre">list_graphs_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_groups"><code class="docutils literal notranslate"><span class="pre">list_groups()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_groups_ids"><code class="docutils literal notranslate"><span class="pre">list_groups_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_node_events"><code class="docutils literal notranslate"><span class="pre">list_node_events()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_user_events"><code class="docutils literal notranslate"><span class="pre">list_user_events()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_users"><code class="docutils literal notranslate"><span class="pre">list_users()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.list_users_ids"><code class="docutils literal notranslate"><span class="pre">list_users_ids()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.local_node_connections"><code class="docutils literal notranslate"><span class="pre">local_node_connections()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.node_connections"><code class="docutils literal notranslate"><span class="pre">node_connections()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.poll_explore_dataset_intersection"><code class="docutils literal notranslate"><span class="pre">poll_explore_dataset_intersection()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.publish_dataset"><code class="docutils literal notranslate"><span class="pre">publish_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.reject_data_request"><code class="docutils literal notranslate"><span class="pre">reject_data_request()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.remove_user_role"><code class="docutils literal notranslate"><span class="pre">remove_user_role()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.run_gc"><code class="docutils literal notranslate"><span class="pre">run_gc()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.save_computation_session_result"><code class="docutils literal notranslate"><span class="pre">save_computation_session_result()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.show_dataset"><code class="docutils literal notranslate"><span class="pre">show_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.start_computation_session"><code class="docutils literal notranslate"><span class="pre">start_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.tag_computation_session"><code class="docutils literal notranslate"><span class="pre">tag_computation_session()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_and_publish_dataset"><code class="docutils literal notranslate"><span class="pre">upload_and_publish_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_computation_session_result"><code class="docutils literal notranslate"><span class="pre">upload_computation_session_result()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_dataset"><code class="docutils literal notranslate"><span class="pre">upload_dataset()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.upload_graph"><code class="docutils literal notranslate"><span class="pre">upload_graph()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lib.api.CiphermodeApi.waterfall_gather"><code class="docutils literal notranslate"><span class="pre">waterfall_gather()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Pyte
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024, Pyte.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
