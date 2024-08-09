@@ -1,0 +1,24 @@
+.bd-container { /* Replace with the actual container class or ID */
+    padding-left: 0; /* Adjust as necessary */
+    margin-left: 0;
+    justify-content: left;
+}
+
+.bd-sidebar-secondary {
+    order: 1; /* Place it on the left */
+    margin-left: 0; 
+    width: 370px; /* Adjust this to the width that works best for you */
+}
+.bd-sidebar-primary {
+    order: 3; /* Place it on the right */
+    visibility: hidden;
+}
+.bd-article-container {
+    order: 2; /* Place it at the middle */
+
+}
+
+.bd-page-width {
+    max-width: 100%; /* Adjust as necessary */
+}
+
